@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +8,52 @@
 </head>
 
 <body>
+    
     <h1><u>Sarah Parker's Portfolio</u></h1>
+    
     <h2> Interactive Design: User Experience </h2>
     <h3> SAIT: School for Advanced Digital Technology</h3>
-
+    <img height="170 " src="sarah.jpg"> 
     <p> 
-      <style>
-          table, th, td {
-          border:1px solid black;
-          }
-      </style>
+      <style> table, th, td {border: 1px solid black;} </style>
         
-      <table style="width:60%">       <!--Maintains the width of the table to be 50% of the screen whenever the window resizes. CHANGE TO BE IN THE CSS FILE INSTEADA OF HTML!!!-->
+      <table>       <!-- table style=500% Maintains the width of the table to be 50% of the screen whenever the window resizes. CHANGE TO BE IN THE CSS FILE INSTEADA OF HTML!!!-->
         <tr> <!--Headings!-->
-          <th><a href="about.html"> More About Me</a></th> <!----> <th>Contact</th><!----> <th> Projects</th> <th> Resume/Cover Letter</th>
+          <!--Add  target= "_blank" after href to make each clicked page open in a new tab.-->
+          <th><a href="about.html"> More About Me</a></th> <!----> <th><a href="contact.html">  Contact Me</a></th><!----> <th> <a href="projects.html"> Projects</a></th> <th><a href="resumecover.html"> Resume/Cover Letter</a></th>
         </tr>
       </table>
     </p> 
 
-    <p> 
-      Hello!  Welcome to my portfolio website, I am a first year Interactive Design: User Experience Major at SAIT and I am loving it so far! <br/>  
-      I was born and raised in Calgary Alberta and am currently living in Residence on campus to get the full experience of SAIT.  
-    
-    
-    
-    
-    
-    
-    
-    
+    <p>
+      Hello, welcome to my portfolio website! I'm Sarah, and I am a first year Interactive Design: User Experience 
+      Major at SAIT and I am enjoying it so much, and I am learning even more.
     </p>
-    <!--Add a photo and in the alt section, add a detailed description of what the image is. -->
-    <picture> <img src="ext64.png" alt="Aseprite logo, pixelated raabbit with no mouth" ></picture> <!-- Example with the only photo on my computer rn-->
 
 
+    <p> The <i>5 Goals</i> that I want to keep in mind while attending SAIT are:</p>
+      <ol> 
+        <li> Maintain good sleep habits </li>
+        <li> Be excited to learn new things, and try not to get discouraged when challenged.</li>
+        <li> Do my best every day, whatever that looks like.</li>
+        <li> Make time for myself and my hobbies.</li>
+        <li> Try to make new connections wherever possible.</li>
+      </ol>
+
+    <p>
+      <table> <!--1 Cell Clickable Table that expands to reveal more information.-->
+        <th>
+          <details>
+            <summary > <strong>Click</strong> to learn more about my Educational Background. </summary>
+            <p >  
+              I have struggled for a long time in figuring out what it is that I really want to do in life, 
+              and I have tried a number of different programs since graduating in 2020 at different post secondary schools while trying to figure that out.  
+              I studied Chemistry for a year at Mount Royal University, Computer Science for a year at the University of Calgary, and now Interactive Design at SAIT.
+              I finally feel like I have found the program that feels right for me 
+            </p>
+          </details>
+        </th>
+      </table>
+    </p>
 </body>
 </html>
