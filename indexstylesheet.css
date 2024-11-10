@@ -27,12 +27,24 @@ html{
             height: auto;
         }
         ul{
+            text-decoration: none;
             list-style-type: none;
             gap:10px;
             padding:2px;
             display: flex;
             justify-content: space-around;
             
+        }
+        ul li a{        
+            text-decoration: none;
+            padding: 5px 10px;
+
+        
+        }
+        ul li a:hover{
+            color:darkblue;
+            box-shadow: 0 4px 8px rgba(21, 85, 174, 0.5); /* horizontal vertical blur radius colour */
+            border-style: dashed; /*Created box upon hovering style*/
         }
 
 
