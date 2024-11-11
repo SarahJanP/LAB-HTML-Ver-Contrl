@@ -1,6 +1,41 @@
-html{
-    body {
-        
+        /*  TODO: 
+        MAKE ALL LINKS HAVE VISUAL FEEDBACK WHEN HOVERING 
+        FIX COLOURS
+        ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
+        */
+/*---------------------------------------------UNIVERSAL STYLING------------------------------------------*/
+
+/*MENU BAR*/
+.NAVIGATIONMENU { /*UL*/
+    color:chartreuse;
+    max-width: 80%;   /*OPTIMIZE SO WHEN RESOLUTION SHRINKS MENU CHANGES */
+    text-decoration: none;
+    list-style-type: none;
+    gap:10px;
+    padding:2px;
+    display: flex;
+    justify-content: space-around; /*NOT ALL UL'S ARE SUPPOSED TO BE FORMATTED LIKE THIS ADD NAMMESSSS*/
+}
+
+.NAVMENUELEMENTS{     /*ul li*/   
+    text-decoration: none;
+    padding: 5px 10px;
+    justify-content: center;
+}
+.MENULINKS:hover{ /* ul li:hover*/
+    color:darkblue;
+    box-shadow: 0 4px 8px rgba(21, 85, 174, 0.5); /* horizontal vertical blur radius colour */
+    border-style: dashed; /*Created box upon hovering style*/
+}
+/*MENU BAR END*/
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- MAIN PAGE OF WEBSITE STYLESHEET-------------------------- */
+.MainPage {
+
         display: flex;
         
         background-color: powderblue;
@@ -10,6 +45,9 @@ html{
             max-width: 70%;
             align-self: center;
             color: pink;
+        }
+        h1 :hover {
+            color:darkblue
         }
         h2{
             max-width: 60%;
@@ -26,36 +64,75 @@ html{
             max-width: 30%;
             height: auto;
         }
-        ul{
-            text-decoration: none;
-            list-style-type: none;
-            gap:10px;
-            padding:2px;
-            display: flex;
-            justify-content: space-around;
-            
+        p{
+            max-width: 80%;
+            align-self: center;
+            border-color: aliceblue;
+            border-style:ridge;
         }
-        ul li a{        
-            text-decoration: none;
-            padding: 5px 10px;
-
-        
-        }
-        ul li a:hover{
-            color:darkblue;
-            box-shadow: 0 4px 8px rgba(21, 85, 174, 0.5); /* horizontal vertical blur radius colour */
-            border-style: dashed; /*Created box upon hovering style*/
-        }
-
 
         ol{
             color:blueviolet;
             align-self: center;
+        }
+        section{    
+            align-self: center;
+            justify-content: space-around;
         }
 
         details{
             color:palevioletred;
             align-self:center;
         }
-    }
 }
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------ABOUT ME CSS STYLING---------------------------------------*/
+.AboutMe {
+    display: flex;
+        
+    background-color: powderblue;
+    flex-flow:column;
+    align-items: center;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------CONTACT ME CSS STYLING-------------------------------------*/
+.ContactMe {
+    display: flex;
+        
+    background-color: powderblue;
+    flex-flow:column;
+    align-items: center;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------PROJECTS CSS STYLING---------------------------------------*/
+.Projects {
+    display: flex;
+        
+    background-color: powderblue;
+    flex-flow:column;
+    align-items: center;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------RESUMECOVERLETTER CSS STYLING------------------------------*/
+.ResumeCover {
+    display: flex;
+        
+    background-color: powderblue;
+    flex-flow:column;
+    align-items: center;
+    
+}
+
