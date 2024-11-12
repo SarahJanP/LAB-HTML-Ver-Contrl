@@ -25,12 +25,15 @@
 }
 
 .NAVIGATIONMENU li{      
+    font-family:"Faculty Glyphic", sans-serif;
     flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
     padding: clamp(5px,1vw,10px);  /*Padding change of each item.*/
     text-align: center;
 }
 
-.NAVIGATIONMENU li a{        
+.NAVIGATIONMENU li a{     
+    font-family:"Faculty Glyphic", sans-serif;
+    font-weight:800;
     text-decoration: none;
     padding:10px;
     overflow-wrap:break-word;
@@ -62,6 +65,7 @@
             
 
         h1{
+            font-family:"Faculty Glyphic", sans-serif;
             font-size: clamp(13.8px, 4vw, 48px); /*Min, scale, Max*/
             max-width: 80%;
             color: rgb(54, 0, 54);
@@ -70,17 +74,15 @@
             padding-bottom: 0;
             text-decoration: none;
         }
-        h1 a {
-            color: rgb(33, 33, 134);
-            text-decoration: none;
-        }
         h2{
+            font-family:"Faculty Glyphic", sans-serif;
             font-size: clamp(12px, 3vw, 25px); /*Min, scale, Max*/
             align-self: center;
             color:rgb(97, 17, 85);
             margin-top:5px
         }  
         h3{ 
+            font-family:"Faculty Glyphic", sans-serif;
             font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
             align-self: center;
             color:rgb(95, 2, 95);
@@ -96,14 +98,19 @@
         }
     }
 
-/*HEADING SECTION OUT -------------------------------*/
+/*REMAINDER OF PAGE -------------------------------*/
 
     display: flex;
     flex-flow:column;
     align-items: center;
     justify-content: center;
-        background-color: powderblue;
+    background-color: powderblue;
+
+
         #Biography{  /*PARAGRAPH ID BIOGRAPHY*/
+            font-family:"DynaPuff", serif;
+            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
+            color: rgb(0, 0, 105);
             max-width: 80%;
             background-color:rgb(113, 212, 255);
             align-self: center;
@@ -112,19 +119,43 @@
             border-width: 10px;
             padding: 10px 5px;
         }
+
+        p{
+            justify-content: center;
+            font-family: "Faculty Glyphic";
+            color:rgb(0, 0, 105);
+            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
+        }
         ol{
+            font-family:"Faculty Glyphic";
+            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
             color:blueviolet;
             align-self: center;
+            padding-bottom: 10px;
         }
-        section{    
-            align-self: center;
-            justify-content: space-around;
+        .odd{color:rgb(37, 13, 143)}
+        .even{color:rgb(140, 8, 127)}
+
+        .DETAILS{
+            max-width: 80%;
+            display: flex;
+            font-family:"Faculty Glyphic";
+            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
+            color:rgb(9, 3, 82);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            [open]{
+                background-color: rgb(207, 249, 255);
+                border-radius: 10px;
+            }
+            summary {
+                padding: 10 10;
+                text-align: center;
+            }
         }
-        details{
-            color:palevioletred;
-            align-self:center;
+
         }
-    }
+    
 
 
 
