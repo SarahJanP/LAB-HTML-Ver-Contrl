@@ -50,10 +50,9 @@
 }
 /*MENU BAR END*/
 
-/*--------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------- MAIN PAGE OF WEBSITE STYLESHEET-------------------------- */
 
-.MainPage {
+/*PAGE HEADINGS !!*/
+
         .HeadingSection{
             display: flex;
         
@@ -62,7 +61,6 @@
             justify-content: center;
             width: 100%;
             background-color: rgb(209, 126, 209);
-            
 
         h1{
             font-family:"Faculty Glyphic", sans-serif;
@@ -72,16 +70,27 @@
             justify-content: center;
             margin-bottom: 0px;
             padding-bottom: 0;
-            text-decoration: none;
         }
-        h2{
+        
+        #PortfolioLink a{ /*Link to main heading*/
+            color: rgb(54, 0, 54);
+            text-align: center;
+            text-decoration: none;
+            }
+            #PortfolioLink a:hover{
+                color:blueviolet;
+                text-decoration: underline;
+
+            }
+        
+        h2{ /*ID: UX & about me & contact me & projects & resume */
             font-family:"Faculty Glyphic", sans-serif;
             font-size: clamp(12px, 3vw, 25px); /*Min, scale, Max*/
             align-self: center;
             color:rgb(97, 17, 85);
             margin-top:5px
         }  
-        h3{ 
+        h3{ /*School for Advanced Digital Technology*/
             font-family:"Faculty Glyphic", sans-serif;
             font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
             align-self: center;
@@ -97,6 +106,7 @@
             border-color: white;
         }
     }
+    .MainContent {
 
 /*REMAINDER OF PAGE -------------------------------*/
 
@@ -153,57 +163,8 @@
                 text-align: center;
             }
         }
+    }
 
-        }
-    
-
-
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------ABOUT ME CSS STYLING---------------------------------------*/
-.AboutMe {
-    display: flex;
-        
-    background-color: powderblue;
-    flex-flow:column;
-    align-items: center;
-
+h1{
+    text-decoration: none;
 }
-
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------CONTACT ME CSS STYLING-------------------------------------*/
-.ContactMe {
-    display: flex;
-        
-    background-color: powderblue;
-    flex-flow:column;
-    align-items: center;
-
-}
-
-
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------PROJECTS CSS STYLING---------------------------------------*/
-.Projects {
-    display: flex;
-        
-    background-color: powderblue;
-    flex-flow:column;
-    align-items: center;
-
-}
-
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------RESUMECOVERLETTER CSS STYLING------------------------------*/
-.ResumeCover {
-    display: flex;
-        
-    background-color: powderblue;
-    flex-flow:column;
-    align-items: center;
-    
-}
-
