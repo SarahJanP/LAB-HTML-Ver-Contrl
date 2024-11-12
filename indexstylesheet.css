@@ -4,7 +4,7 @@
         ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
         */
 
-/*UNIVERSAL STYLING  -----  element selectors */
+/*--------------------------------------UNIVERSAL STYLING  -----  element selectors */
 
 h1{ 
     font-family:"DynaPuff", sans-serif;
@@ -35,6 +35,7 @@ p{
     color: rgb(0, 0, 105);
     max-width: 90%;
     align-self: center;
+    text-align: center;
     border-width: 10px;
     padding: 10px 5px;
 }
@@ -43,6 +44,24 @@ p{
 ol{
     font-family: "Faculty Glyphic", serif;
     color:rgb(9, 3, 82);
+}
+ul{
+    padding-left: 30px;
+    display: flex;
+    flex-flow: column;
+    max-block-size: 136px;
+    align-items: center;
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(95, 2, 95);
+}
+
+ul li a {
+    text-decoration: none;
+    color:rgb(95, 2, 95);
+}
+ul li a:hover{
+    color:blueviolet;
+    text-decoration: underline;
 }
 
 figcaption {
@@ -84,9 +103,9 @@ details{
     }
 }
 
-/*UNIVERSAL STYLING END -------------------------------------------------------------*/
+/*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
 
-/*----------------------------------------MENU BAR-----------------------------------------*/
+/*------------------------------------------------------MENU BAR START-----------------------------------------*/
 .menu-background{ /*BLUE MENU BAR*/
     width: 100%;
     background-color: rgb(124, 195, 249);
@@ -133,22 +152,20 @@ details{
     background-color: pink;
 }
 
-/*--------------------------------------------MENU BAR END-----------------------------------*/
+/*------------------------------------------------------MENU BAR END---------------------------------------------*/
 
 
 
 
 
-
-.HeadingSection{ /*------------------HEADING SECTION FROM H1-H3----------------------*/
+/*------------------------------------------------------HEADING SECTION START-------------------------------------*/
+.HeadingSection{ 
     display: flex;
     flex-flow:column;
     align-items: center;
     justify-content: center;
     width: 100%;
     background-color: rgb(209, 126, 209);
-
-
 
     #PORTFOLIOLINK{
         margin-top: 50px;
@@ -173,6 +190,7 @@ details{
         margin-bottom: 10px;
         padding: 0 0;
     }
+
     figure#SarahPNG{ /*Main Page Photo*/
         align-self: center;
         max-width: 30%;
@@ -181,20 +199,10 @@ details{
         border-color: white;
     }
 }
-    /*** -------------------------------HEADING SECTION END--------------------------------***/
+/*** -----------------------------------------------HEADING SECTION END--------------------------------***/
 
 
-#Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
-    font-family:"DynaPuff", sans-serif;
-    color: rgb(0, 0, 105);
-    max-width: 90%;
-    background-color:rgb(113, 212, 255);
-    align-self: center;
-    border-color: aliceblue;
-    border-style:double;
-    border-width: 10px;
-    padding: 10px 5px;
-}
+
 /*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
 .MainContent {
     display: flex;
@@ -203,95 +211,45 @@ details{
     justify-content: center;
     background-color: powderblue;
 
-    #SAITGoals{ 
-        color:rgb(0, 0, 105);
-        font-family: "Faculty Glyphic",serif;
-    }
-    #SAITGoalsList{
-        font-family:"Faculty Glyphic",serif;
-        color:blueviolet;
+    p#Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
+        font-family:"DynaPuff", sans-serif;
+        color: rgb(0, 0, 105);
+        max-width: 90%;
+        background-color:rgb(113, 212, 255);
         align-self: center;
-        padding-bottom: 10px;
-        margin-top:0px;
+        border-color: aliceblue;
+        border-style:double;
+        border-width: 10px;
+        padding: 10px 5px;
     }
     .odd{color:rgb(37, 13, 143)}
     .even{color:rgb(140, 8, 127)}
 
-
-
-/*------------------CONTACT ME PAGE LINKS:------------------------- */
+    /*------------------CONTACT ME PAGE LINKS:------------------------- */
     .ContactLinks{
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(95, 2, 95);
     }
+
     .ContactLinks a{
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(25, 6, 236);
     }
+
     .ContactLinks a:hover{
         color:blueviolet;
         text-decoration: underline;
     }
+
     /*----------------CONTACT ME LINKS END ------------------------*/
+
+    #MainFooter{
+        font-family: "Faculty Glyphic", serif;
+        font-size: x-small;
+    }
 }
-/*----------------------------ABOUT ME PAGE----------------------------*/
-
-#MediumList{
-    padding-left: 45px;;
-    font-family: "Faculty Glyphic", serif;
-    color:rgb(9, 3, 82);
-}
-
-#GenreTalk{
-    Font-family:"DynaPuff", sans-serif;
-    color:rgb(0, 0, 105);;
-    margin: auto;
-    max-width: 90%;
-    display: flex;
-    text-align: center;
-}
-
-#MusicArtistList{
-    padding-left: 30px;
-    display: flex;
-    flex-flow: column;
-    max-block-size: 136px;
-    align-items: center;
-    font-family: "Faculty Glyphic", serif;
-    color:rgb(95, 2, 95);
-}
-
-#MusicArtistList li {
-    padding: 0 0;
-    margin:0;
-}
-
-
-#MusicArtistList li a {
-    text-decoration: none;
-    color:rgb(95, 2, 95);
-}
-
-#MusicArtistList li a:hover{
-    color:blueviolet;
-}
-
-#Artistic-History-Title{
-    font-family:"Faculty Glyphic", serif;
-    color:rgb(9, 3, 82);
-    margin-top:30px;
-    margin-bottom: 0px;
-}
-
-/*---------------------------- ABOUT ME END ----------------------------*/
-
-#MainFooter{
-    font-family: "Faculty Glyphic", serif;
-    font-size: x-small;
-}
-
 /*----------------------------  CONTACT ME ----------------------------*/
 /*----------------------------  CONTACT ME END----------------------------*/
 
@@ -300,9 +258,6 @@ details{
 @media(max-width:600px){  /*------------------------MOBILE-------------------*/
     body{
         background-color: blue;
-    }
-    .menu-background{
-    
     }
     .HeadingSection #PortfolioMainPageH1{
         font-size: clamp(16px,4vw,40px);
