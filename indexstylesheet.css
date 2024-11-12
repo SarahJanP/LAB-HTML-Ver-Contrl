@@ -4,73 +4,97 @@
         ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
         */
 /*---------------------------------------------UNIVERSAL STYLING------------------------------------------*/
-
 /*MENU BAR*/
-.NAVIGATIONMENU { /*UL*/
-    color:chartreuse;
-    max-width: 80%;   /*OPTIMIZE SO WHEN RESOLUTION SHRINKS MENU CHANGES */
-    text-decoration: none;
-    list-style-type: none;
-    gap:10px;
-    padding:2px;
-    display: flex;
-    justify-content: space-around; /*NOT ALL UL'S ARE SUPPOSED TO BE FORMATTED LIKE THIS ADD NAMMESSSS*/
+.menu-container{
+    width: 100%;
+    background-color: rgb(124, 195, 249);
+    border-style: solid;
+    border-color: white;
 }
 
-.NAVMENUELEMENTS{     /*ul li*/   
-    text-decoration: none;
-    padding: 5px 10px;
+.NAVIGATIONMENU { /*UL*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0px,1vw,15px);  /*Spacing between each element*/
+    font-size: clamp(12px, 2vw, 25px);
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    max-width: 100%;
     justify-content: center;
 }
-.MENULINKS:hover{ /* ul li:hover*/
-    color:darkblue;
-    box-shadow: 0 4px 8px rgba(21, 85, 174, 0.5); /* horizontal vertical blur radius colour */
-    border-style: dashed; /*Created box upon hovering style*/
+
+.NAVIGATIONMENU li{      
+    flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
+    padding: clamp(5px,1vw,10px);  /*Padding change of each item.*/
+    text-align: center;
+}
+
+.NAVIGATIONMENU li a{        
+    text-decoration: none;
+    padding:10px;
+    overflow-wrap:break-word;
+    white-space: no-wrap;
+
+
+}
+.NAVIGATIONMENU li a:hover{ /* ul li a:hover*/
+    box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* horizontal vertical blur radius colour */
+    color: white;
+    border-radius: 8px;
+    background-color: pink;
 }
 /*MENU BAR END*/
-
-
-
 
 /*--------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- MAIN PAGE OF WEBSITE STYLESHEET-------------------------- */
 .MainPage {
 
+        max-width: 100%;
         display: flex;
         
         background-color: powderblue;
         flex-flow:column;
         align-items: center;
+        justify-content: center;
         h1{
-            max-width: 70%;
+            font-size: clamp(17px, 4vw, 48px); /*Min, scale, Max*/
+            max-width: 80%
             align-self: center;
             color: pink;
+            margin-bottom: 0px;
         }
         h1 :hover {
             color:darkblue
         }
         h2{
-            max-width: 60%;
+            font-size: clamp(12px, 3vw, 40px); /*Min, scale, Max*/
             align-self: center;
             color:blueviolet;
+            margin-bottom: 0px;
         }  
         h3{ 
-            max-width: 50%;
+            font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
             align-self: center;
-            color:green
+            color:green;
+            margin-bottom: 10px;
         }
         img{
             align-self: center;
             max-width: 30%;
             height: auto;
+            border-style:groove;
+            border-color: white;
         }
-        p{
+        #Biography{  /*PARAGRAPH ID BIOGRAPHY*/
             max-width: 80%;
+            background-color:rgb(144, 170, 240);
             align-self: center;
             border-color: aliceblue;
-            border-style:ridge;
+            border-style:double;
+            border-width: 10px;
+            padding: 10px 5px;
         }
-
         ol{
             color:blueviolet;
             align-self: center;
@@ -79,12 +103,11 @@
             align-self: center;
             justify-content: space-around;
         }
-
         details{
             color:palevioletred;
             align-self:center;
         }
-}
+    }
 
 
 
