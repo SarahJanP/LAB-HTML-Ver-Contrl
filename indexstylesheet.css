@@ -10,22 +10,23 @@ h1{
     font-family:"DynaPuff", sans-serif;
     max-width: 80%;
     color: rgb(54, 0, 54);
-    justify-content: center;
-    align-self:center;
+    text-align: center;
     margin-bottom: 0px;
     padding-bottom: 0;
 }
 
 h2{ 
+    max-width: 80%;
     font-family:"Faculty Glyphic", serif;
-    align-self: center;
+    text-align: center;
     color:rgb(97, 17, 85);
     margin-top:5px
 }  
 
 h3{
+    max-width: 80%;
     display:flex;
-    justify-content: center;
+    text-align: center;
     Font-family:"DynaPuff", sans-serif;
     color:rgb(95, 2, 95);
 }
@@ -33,8 +34,7 @@ h3{
 p{
     font-family:"DynaPuff", serif;
     color: rgb(0, 0, 105);
-    max-width: 90%;
-    align-self: center;
+    max-width: 80%;
     text-align: center;
     border-width: 10px;
     padding: 10px 5px;
@@ -42,11 +42,14 @@ p{
 
 
 ol{
+    max-width: 80%;
+    text-align: center;
     font-family: "Faculty Glyphic", serif;
     color:rgb(9, 3, 82);
 }
 ul{
-    padding-left: 30px;
+    max-width: 80%;
+    text-align: center;
     display: flex;
     flex-flow: column;
     max-block-size: 136px;
@@ -70,7 +73,15 @@ figcaption {
     color:rgb(80, 2, 80);
 }
 
+figure img{
+    border-color: white;
+    border-style:double;
+}
+
 footer{
+    max-width: 80%;
+    font-size: 10px;
+    text-align: center;
     color:rgb(9, 3, 82);
     align-self: flex-start;
     background-color: rgb(151, 182, 254);
@@ -109,37 +120,31 @@ details{
 .menu-background{ /*BLUE MENU BAR*/
     width: 100%;
     background-color: rgb(124, 195, 249);
-    border-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
     border-color: white;
 }
 
 .NAVIGATIONMENU { /* The actual menu bar LIST */
-    display: flex;
-    flex-wrap: wrap;
-    flex:1 1 40%;
-    gap: clamp(0px, 1vw, 15px);
+    display: grid;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    justify-content: center;
 }
 
 .NAVIGATIONMENU li { /* Menu Bar List ITEMS */
     font-family: "Faculty Glyphic", serif;
-    min-width: 100px; /* Ensure items are not too small to be readable */
-    flex:1 1 40%;
-    padding: clamp(5px, 1vw, 10px);  
-    text-align: center;
-    flex-grow: 1; /* Allow items to grow to fill available space */
     flex-basis: auto; /* Let the items decide their size based on content */
 }
 
 .NAVIGATIONMENU li a { /* Menu Bar List LINKS */
+    text-align: center;
     font-family: "Faculty Glyphic", serif;
     font-weight: 800;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     overflow-wrap: break-word;
     white-space: nowrap;
     color: rgb(12, 12, 228);
@@ -168,6 +173,8 @@ details{
     background-color: rgb(209, 126, 209);
 
     #PORTFOLIOLINK{
+        max-width: 80%;
+        justify-content: center;
         margin-top: 50px;
         margin-bottom:20px;
     }
@@ -184,6 +191,7 @@ details{
     }
 
     #SADT{ /*Main Page - School for Advanced Digital Technology*/
+            max-width: 80%;
         font-family:"Faculty Glyphic", serif;
         align-self: center;
         color:rgb(95, 2, 95);
@@ -191,13 +199,7 @@ details{
         padding: 0 0;
     }
 
-    figure#SarahPNG{ /*Main Page Photo*/
-        align-self: center;
-        max-width: 30%;
-        height: auto;
-        border-style:groove;
-        border-color: white;
-    }
+
 }
 /*** -----------------------------------------------HEADING SECTION END--------------------------------***/
 
@@ -227,6 +229,7 @@ details{
 
     /*------------------CONTACT ME PAGE LINKS:------------------------- */
     .ContactLinks{
+        max-width: 80%;
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(95, 2, 95);
@@ -245,56 +248,295 @@ details{
 
     /*----------------CONTACT ME LINKS END ------------------------*/
 
-    #MainFooter{
+    .MainContent #MainFooter{
+        max-width: 80%;
+        justify-content: center;
         font-family: "Faculty Glyphic", serif;
         font-size: x-small;
     }
 }
-/*----------------------------  CONTACT ME ----------------------------*/
-/*----------------------------  CONTACT ME END----------------------------*/
+
+
+
+
+
+
 
 /*-----------------------------------------MEDIA QUERIES----------------------------*/
 
 @media(max-width:600px){  /*------------------------MOBILE-------------------*/
     body{
         background-color: blue;
+        width: 100%;
     }
-    .HeadingSection #PortfolioMainPageH1{
-        font-size: clamp(16px,4vw,40px);
-    }
-    .HeadingSection #PortfolioMainPageIDUXH2{
-        font-size: clamp(13px,3vw,30px);
-    }
-    .HeadingSection #SADT{
-        font-size: clamp(10px,3vw,20px);;
-    }
+    .menu-background{
+        max-width: 100%;
+        padding: 10px 10px;
 
+    }
+    .NAVIGATIONMENU {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
     .NAVIGATIONMENU li{
-        font-size: clamp(12px,3vw,20px);
-        gap: clamp(2px,3vw,30px);
-        padding:clamp(0px,1vw,20px);
+        gap:auto;
+
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
-    .MainContent #Biography{
-        font-size:clamp(12px,2.5vw,20px); ;
-
+    .NAVIGATIONMENU li a{
+        gap:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
+    #Biography{
+        font-size: larger;
+        height: auto;
+        margin-right:11px;
+    }
+    #SADT{
+        font-size: medium;
+    }
+    .MainContent p{
+        font-size: 16px;
+    }
+    .MainContent h3{
+        margin-bottom:0px;
+    }
+    .MainContent ol{
+        font-size: larger;
+    }
+    .MainContent ul{
+        font-size: larger;
+    }
+    details{
+        font-size: larger;
+    }
+    figcaption{
+        font-size: small;
+    }
+    footer{
+        font-size: larger;
+    }
+    footer#MainFooter{
+        font-size: larger;
+    }
+    .MainContent h3{
+        font-size: 24px;
+    }
+    .HeadingSection figcaption{
+        font-size: 15px;
+    }
+    
 }
 
 @media(min-width:601px) and (max-width:1200px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
-        /*HEADINGS*/
-
-        /*BODY*/
     }
+    .HeadingSection #SADT {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .HeadingSection figcaption{
+        font-size: 15px;
+    }
+    .NAVIGATIONMENU li{
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin-left:0;
+    }
+    .MainContent h3{
+        margin-bottom: 0px;
+        padding-bottom:0px;
+    }
+    .MainContent h3 u{
+        margin-bottom: 0px;
+        padding-bottom:0px;
+        text-size-adjust: 20px;
+    }
+    .MainContent p{
+        font-size: 17px;
+    }
+    .MainContent ul{
+        font-size: 17px;
+    }
+    .MainContent ol{
+        font-size: 17px;
+    }
+
+    .MainContent details{
+        font-size: 17px;
+    }
+    footer{
+        font-size: larger;
+    }
+    footer#MainFooter{
+        font-size: larger;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width:1201px){   /*------------------------DESKTOP+-------------------*/
     body{
-        background-color: green;
-        /*HEADINGS*/
+        background-color: powderblue;
+        margin-left: 15%;
+        max-width: 85%;
+    }
 
-        /*BODY*/
+    p{
+        font-size: 25px;
+    }
+
+    /*-----------------MENU BAR start -----------*/
+    .menu-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 15%;
+        background-color: rgb(124, 195, 249);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .NAVIGATIONMENU {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .NAVIGATIONMENU li {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25%;
+        margin-left: 22%;
+        margin-bottom: 25%;
+        padding: 0px 0px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        }
+
+    .NAVIGATIONMENU li a {
+        display: flex;
+        color: rgb(12, 12, 228);
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+
+    .NAVIGATIONMENU li a:hover {
+        color: white;
+        background-color: pink;
+    }
+/*MENU BAR END */
+
+
+/*------------------HEADING SECTION START ---------------------*/
+
+    .HeadingSection {
+        display: inline-block;
+        grid-column: auto;
+        align-items: center;
+        padding: 80px 20px;
+    }
+    .HeadingSection h1{
+        font-size: 50px;
+        float: left;
+        margin-left:120px;
+    }
+
+    .HeadingSection h2{
+        font-size: 40px;
+        margin-left:120px;
+        padding-top:20px;
+        float:left;
+        clear:left;
+    }
+    .HeadingSection #SADT{
+        font-size: 30px;
+        margin-left:120px;
+        margin-top: 0px;;
+        float:left;
+        clear:left;
+    }
+
+    .HeadingSection figure {
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 60%;
+        height: auto;
+        margin-right:15%;
+        margin-bottom: 0px;
+    }
+    .HeadingSection figure img{
+        display:flex;
+        justify-content: flex-end;
+        max-width: 40%;
+        height: auto;
+    }
+
+    .HeadingSection figCaption{
+        font-size: 30px;
+        margin-top: 300px;
+    }
+
+
+    .MainContent h3{
+        font-size: 40px;
+        margin-top: 3px;
+    }
+    .MainContent ol{
+        font-size: 30px;
+    }
+    .MainContent ul{
+        font-size: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    .MainContent p{
+        font-size: 30px;
+    }
+    footer{
+        font-size: 27px;
     }
 }
+
+
+
+    
+
