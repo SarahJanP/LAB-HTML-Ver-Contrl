@@ -12,38 +12,40 @@
     border-color: white;
 }
 
-.NAVIGATIONMENU { /* The actual menu bar LIST*/
+.NAVIGATIONMENU { /* The actual menu bar LIST */
     display: flex;
     flex-wrap: wrap;
-    /*gap: clamp(0px,1vw,15px);  Spacing between each element*/
-
+    flex:1 1 40%;
+    gap: clamp(0px, 1vw, 15px);
     list-style-type: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     max-width: 100%;
     justify-content: center;
 }
 
-.NAVIGATIONMENU li{  /*Menu Bar List ITEMS*/
-    font-family:"Faculty Glyphic", serif;
-    flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
-    /*padding: clamp(5px,1vw,10px);  Padding change of each item.*/
+.NAVIGATIONMENU li { /* Menu Bar List ITEMS */
+    font-family: "Faculty Glyphic", serif;
+    min-width: 100px; /* Ensure items are not too small to be readable */
+    flex:1 1 40%;
+    padding: clamp(5px, 1vw, 10px);  
     text-align: center;
+    flex-grow: 1; /* Allow items to grow to fill available space */
+    flex-basis: auto; /* Let the items decide their size based on content */
 }
 
-.NAVIGATIONMENU li a{  /*Menu Bar List LINKS*/   
-    font-family:"Faculty Glyphic", serif;
-    font-weight:800;
+.NAVIGATIONMENU li a { /* Menu Bar List LINKS */
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 800;
     text-decoration: none;
-    padding:10px;
-    overflow-wrap:break-word;
-    white-space: no-wrap;
-    color:rgb(12, 12, 228);
-
-
+    padding: 10px;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    color: rgb(12, 12, 228);
 }
-.NAVIGATIONMENU li a:hover{ /* Menu Bar HOVER FUNCTION */
-    box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* horizontal vertical blur radius colour */
+
+.NAVIGATIONMENU li a:hover { /* Menu Bar HOVER FUNCTION */
+    box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* Horizontal vertical blur radius color */
     color: white;
     border-radius: 8px;
     background-color: pink;
@@ -60,7 +62,7 @@
     width: 100%;
     background-color: rgb(209, 126, 209);
 
-    #PortfolioMainPageH1{ /*MainPageHeading*/
+    #PortfolioMainPageH1{ /*MainPageHeading NO LINK*/
         font-family:"DynaPuff", sans-serif;
         max-width: 80%;
         color: rgb(54, 0, 54);
@@ -75,7 +77,7 @@
         text-align: center;
         text-decoration: none;
         }
-    #PORTFOLIOLINK a:hover{
+    #PORTFOLIOLINK a:hover{ /*HOVER Function "Sarah Parker's Portfolio" every page BUT main*/
         color:rgb(97, 17, 85);
         text-decoration: underline;
     }
@@ -92,7 +94,7 @@
         margin-bottom: 10px;
         padding: 0 0;
     }
-    #SarahPNG{ /*Main Page Photo*/
+    figure#SarahPNG{ /*Main Page Photo*/
         align-self: center;
         max-width: 30%;
         height: auto;
@@ -106,7 +108,7 @@
 #Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
     font-family:"DynaPuff", sans-serif;
     color: rgb(0, 0, 105);
-    max-width: 80%;
+    max-width: 90%;
     background-color:rgb(113, 212, 255);
     align-self: center;
     border-color: aliceblue;
@@ -272,20 +274,49 @@ footer a:hover{
 
 /*-----------------------------------------MEDIA QUERIES----------------------------*/
 
-@media(max-width:600px){
+@media(max-width:600px){  /*------------------------MOBILE-------------------*/
     body{
-        background-color: darkblue;
+        background-color: blue;
+    }
+    .menu-background{
+    
+    }
+    .HeadingSection #PortfolioMainPageH1{
+        font-size: clamp(16px,4vw,40px);
+    }
+    .HeadingSection #PortfolioMainPageIDUXH2{
+        font-size: clamp(13px,3vw,30px);
+    }
+    .HeadingSection #SADT{
+        font-size: clamp(10px,3vw,20px);;
+    }
+
+    .NAVIGATIONMENU li{
+        font-size: clamp(12px,3vw,20px);
+        gap: clamp(2px,3vw,30px);
+        padding:clamp(0px,1vw,20px);
+    }
+
+    .MainContent #Biography{
+        font-size:clamp(12px,2.5vw,20px); ;
+
     }
 }
 
-@media(min-width:601px) and (max-width:1200px){
+@media(min-width:601px) and (max-width:1200px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
+        /*HEADINGS*/
+
+        /*BODY*/
     }
 }
 
-@media(min-width:1201px){   
+@media(min-width:1201px){   /*------------------------DESKTOP+-------------------*/
     body{
         background-color: green;
+        /*HEADINGS*/
+
+        /*BODY*/
     }
 }
