@@ -25,14 +25,14 @@
 }
 
 .NAVIGATIONMENU li{  /*Menu Bar List ITEMS*/
-    font-family:"Faculty Glyphic", sans-serif;
+    font-family:"Faculty Glyphic", serif;
     flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
     /*padding: clamp(5px,1vw,10px);  Padding change of each item.*/
     text-align: center;
 }
 
 .NAVIGATIONMENU li a{  /*Menu Bar List LINKS*/   
-    font-family:"Faculty Glyphic", sans-serif;
+    font-family:"Faculty Glyphic", serif;
     font-weight:800;
     text-decoration: none;
     padding:10px;
@@ -61,7 +61,7 @@
     background-color: rgb(209, 126, 209);
 
     #PortfolioMainPageH1{ /*MainPageHeading*/
-        font-family:"Faculty Glyphic", sans-serif;
+        font-family:"DynaPuff", sans-serif;
         max-width: 80%;
         color: rgb(54, 0, 54);
         justify-content: center;
@@ -70,6 +70,7 @@
         padding-bottom: 0;
     }
     #PORTFOLIOLINK a{ /*Link to main heading - every page BUT MAIN*/
+        font-family: "DynaPuff", sans-serif;
         color: rgb(54, 0, 54);
         text-align: center;
         text-decoration: none;
@@ -79,13 +80,13 @@
         text-decoration: underline;
     }
     #PortfolioMainPageIDUXH2{ /*Main Page - ID: UX & about me & contact me & projects & resume */
-        font-family:"Faculty Glyphic", sans-serif;
+        font-family:"Faculty Glyphic", serif;
         align-self: center;
         color:rgb(97, 17, 85);
         margin-top:5px
     }  
     #SADT{ /*Main Page - School for Advanced Digital Technology*/
-        font-family:"Faculty Glyphic", sans-serif;
+        font-family:"Faculty Glyphic", serif;
         align-self: center;
         color:rgb(95, 2, 95);
         margin-bottom: 10px;
@@ -103,7 +104,7 @@
 
 /*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
 #Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
-    font-family:"DynaPuff", serif;
+    font-family:"DynaPuff", sans-serif;
     color: rgb(0, 0, 105);
     max-width: 80%;
     background-color:rgb(113, 212, 255);
@@ -126,7 +127,7 @@
         font-family: "Faculty Glyphic",serif;
     }
     #SAITGoalsList{
-        font-family:"Faculty Glyphic";
+        font-family:"Faculty Glyphic",serif;
         color:blueviolet;
         align-self: center;
         padding-bottom: 10px;
@@ -138,7 +139,7 @@
     .DETAILS{   /*-------EXPANDABLE EDUCATION BACKGROUND-------*/
         max-width: 80%;
         display: flex;
-        font-family:"Faculty Glyphic";
+        font-family:"Faculty Glyphic", serif;
         font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
         color:rgb(9, 3, 82);
         margin-bottom: 10px;
@@ -152,24 +153,68 @@
             text-align: center;
         }
     }
+
+
+    #FOOTER a:hover{
+        color:blueviolet;
+    }
+
+    #LINKEDIN a:hover, #GITHUB a:hover, #EMAIL a:hover{
+        color:blueviolet;
+    }
+}
+
+.ListOfSoftware{
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+}
+.Paragraph {
+    display:flex;
+    align-self: center;
+    font-family:"DynaPuff", sans-serif;
+    color:rgb(9, 3, 82);
 }
 
 .BodyHeadings{
-    Font-family:"DynaPuff", serif;
+    display:flex;
+    justify-content: center;
+    Font-family:"DynaPuff", sans-serif;
     color:rgb(95, 2, 95);
 }
 
+
+
 #MediumList{
+    padding-left: 45px;;
     font-family: "Faculty Glyphic", serif;
     color:rgb(9, 3, 82);
 }
-p {  /*ALL DEFAULT PARAGRAPHS WILL HAVE THIS :*/
-    font-family: "Faculty Glyphic", serif;
-    color:rgb(9, 3, 82);
+
+#GenreTalk{
+    Font-family:"DynaPuff", sans-serif;
+    color:rgb(0, 0, 105);;
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    text-align: center;
 }
+
 #MusicArtistList{
+    padding-left: 30px;
+    display: flex;
+    flex-flow: column;
+    max-block-size: 136px;
+    align-items: center;
+    font-family: "Faculty Glyphic", serif;
     color:rgb(95, 2, 95);
 }
+
+#MusicArtistList li {
+    padding: 0 0;
+    margin:0;
+}
+
+
 #MusicArtistList li a {
     text-decoration: none;
     color:rgb(95, 2, 95);
