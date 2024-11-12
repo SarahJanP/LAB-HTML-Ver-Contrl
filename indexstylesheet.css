@@ -102,7 +102,7 @@
 }
     /*** -------------------------------HEADING SECTION END--------------------------------***/
 
-/*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
+
 #Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
     font-family:"DynaPuff", sans-serif;
     color: rgb(0, 0, 105);
@@ -114,7 +114,7 @@
     border-width: 10px;
     padding: 10px 5px;
 }
-
+/*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
 .MainContent {
     display: flex;
     flex-flow:column;
@@ -153,14 +153,19 @@
             text-align: center;
         }
     }
-
-
-    #FOOTER a:hover{
-        color:blueviolet;
+    #LINKEDIN , #GITHUB , #EMAIL {
+        font-family:"Faculty Glyphic", serif;
+        text-decoration: none;
+        color:rgb(95, 2, 95);
     }
-
+    #LINKEDIN a, #GITHUB a, #EMAIL a{
+        font-family:"Faculty Glyphic", serif;
+        text-decoration: none;
+        color:rgb(9, 3, 82);
+    }
     #LINKEDIN a:hover, #GITHUB a:hover, #EMAIL a:hover{
         color:blueviolet;
+        text-decoration: underline;
     }
 }
 
@@ -182,7 +187,7 @@
     color:rgb(95, 2, 95);
 }
 
-
+/*----------------------------ABOUT ME PAGE----------------------------*/
 
 #MediumList{
     padding-left: 45px;;
@@ -224,12 +229,6 @@
     color:blueviolet;
 }
 
-
-.HEADING{
-    color:rgb(95, 2, 95);
-    font-family:"Faculty Glyphic", Serif ;
-}
-/*-------------------------------------ABOUT ME PAGE:---------------------------*/
 #Artistic-History-Title{
     font-family:"Faculty Glyphic", serif;
     color:rgb(9, 3, 82);
@@ -240,17 +239,36 @@
     font-family:"DynaPuff", serif;
     color: rgb(0, 0, 105);
     max-width: 90%;
-
     align-self: center;
-
-
     border-width: 10px;
     padding: 10px 5px;
 }
+/*---------------------------- ABOUT ME END ----------------------------*/
+
+.HEADING{
+    color:rgb(95, 2, 95);
+    font-family:"Faculty Glyphic", Serif ;
+}
 
 
+footer{
+    color:rgb(9, 3, 82);
+    align-self: flex-start;
+    background-color: rgb(151, 182, 254);
+    border-style: solid;
+    border-width: 1px;
+    
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color:blueviolet;
+    text-decoration: underline;
+}
 
-
+/*----------------------------  CONTACT ME ----------------------------*/
+/*----------------------------  CONTACT ME END----------------------------*/
 
 /*-----------------------------------------MEDIA QUERIES----------------------------*/
 
