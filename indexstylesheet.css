@@ -35,6 +35,7 @@
     padding:10px;
     overflow-wrap:break-word;
     white-space: no-wrap;
+    color:rgb(12, 12, 228);
 
 
 }
@@ -48,36 +49,43 @@
 
 /*--------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- MAIN PAGE OF WEBSITE STYLESHEET-------------------------- */
-.MainPage {
 
-        max-width: 100%;
-        display: flex;
+.MainPage {
+        .HeadingSection{
+            display: flex;
         
-        background-color: powderblue;
-        flex-flow:column;
-        align-items: center;
-        justify-content: center;
+            flex-flow:column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(209, 126, 209);
+            
+
         h1{
-            font-size: clamp(17px, 4vw, 48px); /*Min, scale, Max*/
-            max-width: 80%
-            align-self: center;
-            color: pink;
+            font-size: clamp(13.8px, 4vw, 48px); /*Min, scale, Max*/
+            max-width: 80%;
+            color: rgb(54, 0, 54);
+            justify-content: center;
             margin-bottom: 0px;
+            padding-bottom: 0;
+            text-decoration: none;
         }
-        h1 :hover {
-            color:darkblue
+        h1 a {
+            color: rgb(33, 33, 134);
+            text-decoration: none;
         }
         h2{
-            font-size: clamp(12px, 3vw, 40px); /*Min, scale, Max*/
+            font-size: clamp(12px, 3vw, 25px); /*Min, scale, Max*/
             align-self: center;
-            color:blueviolet;
-            margin-bottom: 0px;
+            color:rgb(97, 17, 85);
+            margin-top:5px
         }  
         h3{ 
             font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
             align-self: center;
-            color:green;
+            color:rgb(95, 2, 95);
             margin-bottom: 10px;
+            padding: 0 0;
         }
         img{
             align-self: center;
@@ -86,9 +94,18 @@
             border-style:groove;
             border-color: white;
         }
+    }
+
+/*HEADING SECTION OUT -------------------------------*/
+
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+        background-color: powderblue;
         #Biography{  /*PARAGRAPH ID BIOGRAPHY*/
             max-width: 80%;
-            background-color:rgb(144, 170, 240);
+            background-color:rgb(113, 212, 255);
             align-self: center;
             border-color: aliceblue;
             border-style:double;
