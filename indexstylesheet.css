@@ -3,20 +3,20 @@
         FIX COLOURS
         ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
         */
-/*---------------------------------------------UNIVERSAL STYLING------------------------------------------*/
-/*MENU BAR*/
-.menu-container{
+
+/*----------------------------------------MENU BAR-----------------------------------------*/
+.menu-background{ /*BLUE MENU BAR*/
     width: 100%;
     background-color: rgb(124, 195, 249);
     border-style: solid;
     border-color: white;
 }
 
-.NAVIGATIONMENU { /*UL*/
+.NAVIGATIONMENU { /* The actual menu bar LIST*/
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(0px,1vw,15px);  /*Spacing between each element*/
-    font-size: clamp(12px, 2vw, 25px);
+    /*gap: clamp(0px,1vw,15px);  Spacing between each element*/
+
     list-style-type: none;
     padding:0;
     margin:0;
@@ -24,14 +24,14 @@
     justify-content: center;
 }
 
-.NAVIGATIONMENU li{      
+.NAVIGATIONMENU li{  /*Menu Bar List ITEMS*/
     font-family:"Faculty Glyphic", sans-serif;
     flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
-    padding: clamp(5px,1vw,10px);  /*Padding change of each item.*/
+    /*padding: clamp(5px,1vw,10px);  Padding change of each item.*/
     text-align: center;
 }
 
-.NAVIGATIONMENU li a{     
+.NAVIGATIONMENU li a{  /*Menu Bar List LINKS*/   
     font-family:"Faculty Glyphic", sans-serif;
     font-weight:800;
     text-decoration: none;
@@ -42,142 +42,157 @@
 
 
 }
-.NAVIGATIONMENU li a:hover{ /* ul li a:hover*/
+.NAVIGATIONMENU li a:hover{ /* Menu Bar HOVER FUNCTION */
     box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* horizontal vertical blur radius colour */
     color: white;
     border-radius: 8px;
     background-color: pink;
 }
-/*MENU BAR END*/
+/*--------------------------------------------MENU BAR END-----------------------------------*/
 
 
-/*PAGE HEADINGS !!*/
 
-        .HeadingSection{
-            display: flex;
-        
-            flex-flow:column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background-color: rgb(209, 126, 209);
+.HeadingSection{ /*------------------HEADING SECTION FROM H1-H3----------------------*/
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(209, 126, 209);
 
-        h1{
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(13.8px, 4vw, 48px); /*Min, scale, Max*/
-            max-width: 80%;
-            color: rgb(54, 0, 54);
-            justify-content: center;
-            align-self:center;
-            margin-bottom: 0px;
-            padding-bottom: 0;
-        }
-        
-        #PortfolioLink a{ /*Link to main heading*/
-            color: rgb(54, 0, 54);
-            text-align: center;
-            text-decoration: none;
-            }
-            #PortfolioLink a:hover{
-                color:blueviolet;
-                text-decoration: underline;
-
-            }
-        
-        h2{ /*ID: UX & about me & contact me & projects & resume */
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(12px, 3vw, 25px); /*Min, scale, Max*/
-            align-self: center;
-            color:rgb(97, 17, 85);
-            margin-top:5px
-        }  
-        h3{ /*School for Advanced Digital Technology*/
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
-            align-self: center;
-            color:rgb(95, 2, 95);
-            margin-bottom: 10px;
-            padding: 0 0;
-        }
-        img{
-            align-self: center;
-            max-width: 30%;
-            height: auto;
-            border-style:groove;
-            border-color: white;
-        }
+    #PortfolioMainPageH1{ /*MainPageHeading*/
+        font-family:"Faculty Glyphic", sans-serif;
+        max-width: 80%;
+        color: rgb(54, 0, 54);
+        justify-content: center;
+        align-self:center;
+        margin-bottom: 0px;
+        padding-bottom: 0;
     }
-    .MainContent {
+    #PORTFOLIOLINK a{ /*Link to main heading - every page BUT MAIN*/
+        color: rgb(54, 0, 54);
+        text-align: center;
+        text-decoration: none;
+        }
+    #PORTFOLIOLINK a:hover{
+        color:rgb(97, 17, 85);
+        text-decoration: underline;
+    }
+    #PortfolioMainPageIDUXH2{ /*Main Page - ID: UX & about me & contact me & projects & resume */
+        font-family:"Faculty Glyphic", sans-serif;
+        align-self: center;
+        color:rgb(97, 17, 85);
+        margin-top:5px
+    }  
+    #SADT{ /*Main Page - School for Advanced Digital Technology*/
+        font-family:"Faculty Glyphic", sans-serif;
+        align-self: center;
+        color:rgb(95, 2, 95);
+        margin-bottom: 10px;
+        padding: 0 0;
+    }
+    #SarahPNG{ /*Main Page Photo*/
+        align-self: center;
+        max-width: 30%;
+        height: auto;
+        border-style:groove;
+        border-color: white;
+    }
+}
+    /*** -------------------------------HEADING SECTION END--------------------------------***/
 
-/*REMAINDER OF PAGE -------------------------------*/
+/*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
+#Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
+    font-family:"DynaPuff", serif;
+    color: rgb(0, 0, 105);
+    max-width: 80%;
+    background-color:rgb(113, 212, 255);
+    align-self: center;
+    border-color: aliceblue;
+    border-style:double;
+    border-width: 10px;
+    padding: 10px 5px;
+}
 
+.MainContent {
     display: flex;
     flex-flow:column;
     align-items: center;
     justify-content: center;
     background-color: powderblue;
 
-
-        #Biography{  /*PARAGRAPH ID BIOGRAPHY*/
-            font-family:"DynaPuff", serif;
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color: rgb(0, 0, 105);
-            max-width: 80%;
-            background-color:rgb(113, 212, 255);
-            align-self: center;
-            border-color: aliceblue;
-            border-style:double;
-            border-width: 10px;
-            padding: 10px 5px;
-        }
-
-        p{
-            justify-content: center;
-            font-family: "Faculty Glyphic";
-            color:rgb(0, 0, 105);
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-        }
-        ol{
-            font-family:"Faculty Glyphic";
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color:blueviolet;
-            align-self: center;
-            padding-bottom: 10px;
-        }
-        .odd{color:rgb(37, 13, 143)}
-        .even{color:rgb(140, 8, 127)}
-
-        .DETAILS{
-            max-width: 80%;
-            display: flex;
-            font-family:"Faculty Glyphic";
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color:rgb(9, 3, 82);
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            [open]{
-                background-color: rgb(207, 249, 255);
-                border-radius: 10px;
-            }
-            summary {
-                padding: 10 10;
-                text-align: center;
-            }
-        }
+    #SAITGoals{ 
+        color:rgb(0, 0, 105);
+        font-family: "Faculty Glyphic",serif;
     }
+    #SAITGoalsList{
+        font-family:"Faculty Glyphic";
+        color:blueviolet;
+        align-self: center;
+        padding-bottom: 10px;
+        margin-top:0px;
+    }
+    .odd{color:rgb(37, 13, 143)}
+    .even{color:rgb(140, 8, 127)}
 
-
-    /*ABOUT ME PAGE:*/
-    #Artistic-History-Title{
-        font-family:"Faculty Glyphic", serif;
-        font-size: clamp(18px, 2vw, 35px);
+    .DETAILS{   /*-------EXPANDABLE EDUCATION BACKGROUND-------*/
+        max-width: 80%;
+        display: flex;
+        font-family:"Faculty Glyphic";
+        font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
         color:rgb(9, 3, 82);
-        margin-top:30px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        [open]{
+            background-color: rgb(207, 249, 255);
+            border-radius: 10px;
+        }
+        summary {
+            padding: 10 10;
+            text-align: center;
+        }
     }
-    #Artistic-History{
+}
+
+.BodyHeadings{
+    Font-family:"DynaPuff", serif;
+    color:rgb(95, 2, 95);
+}
+
+#MediumList{
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+}
+p {  /*ALL DEFAULT PARAGRAPHS WILL HAVE THIS :*/
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+}
+#MusicArtistList{
+    color:rgb(95, 2, 95);
+}
+#MusicArtistList li a {
+    text-decoration: none;
+    color:rgb(95, 2, 95);
+}
+
+#MusicArtistList li a:hover{
+    color:blueviolet;
+}
+
+
+.HEADING{
+    color:rgb(95, 2, 95);
+    font-family:"Faculty Glyphic", Serif ;
+}
+/*-------------------------------------ABOUT ME PAGE:---------------------------*/
+#Artistic-History-Title{
+    font-family:"Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+    margin-top:30px;
+    margin-bottom: 0px;
+}
+#Artistic-History{
     font-family:"DynaPuff", serif;
-    font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
     color: rgb(0, 0, 105);
     max-width: 90%;
 
@@ -188,6 +203,11 @@
     padding: 10px 5px;
 }
 
+
+
+
+
+/*-----------------------------------------MEDIA QUERIES----------------------------*/
 
 @media(max-width:600px){
     body{
@@ -201,7 +221,7 @@
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1201px){   
     body{
         background-color: green;
     }
