@@ -68,6 +68,7 @@
             max-width: 80%;
             color: rgb(54, 0, 54);
             justify-content: center;
+            align-self:center;
             margin-bottom: 0px;
             padding-bottom: 0;
         }
@@ -165,6 +166,43 @@
         }
     }
 
-h1{
-    text-decoration: none;
+
+    /*ABOUT ME PAGE:*/
+    #Artistic-History-Title{
+        font-family:"Faculty Glyphic", serif;
+        font-size: clamp(18px, 2vw, 35px);
+        color:rgb(9, 3, 82);
+        margin-top:30px;
+        margin-bottom: 0px;
+    }
+    #Artistic-History{
+    font-family:"DynaPuff", serif;
+    font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
+    color: rgb(0, 0, 105);
+    max-width: 90%;
+
+    align-self: center;
+
+
+    border-width: 10px;
+    padding: 10px 5px;
+}
+
+
+@media(max-width:600px){
+    body{
+        background-color: darkblue;
+    }
+}
+
+@media(min-width:601px) and (max-width:1200px){
+    body{
+        background-color: purple;
+    }
+}
+
+@media(min-width:1201px){
+    body{
+        background-color: green;
+    }
 }
