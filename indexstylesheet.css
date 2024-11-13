@@ -3,9 +3,139 @@
         FIX COLOURS
         ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
         */
-/*---------------------------------------------UNIVERSAL STYLING------------------------------------------*/
-/*MENU BAR*/
-.menu-container{
+
+/*--------------------------------------UNIVERSAL STYLING  -----  element selectors */
+
+h1{ 
+    font-family:"DynaPuff", sans-serif;
+    max-width: 80%;
+    color: rgb(54, 0, 54);
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+h2{ 
+    max-width: 80%;
+    font-family:"Faculty Glyphic", serif;
+    text-align: center;
+    color:rgb(97, 17, 85);
+    margin-top:5px
+}  
+
+h3{
+    max-width: 80%;
+    display:flex;
+    text-align: center;
+    Font-family:"DynaPuff", sans-serif;
+    color:rgb(95, 2, 95);
+    margin-bottom:20px;
+}
+
+p{
+    font-family:"DynaPuff", serif;
+    color: rgb(0, 0, 105);
+    max-width: 80%;
+    text-align: center;
+    border-width: 10px;
+    padding: 10px 5px;
+}
+
+
+ol{
+    max-width: 80%;
+    text-align: center;
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+}
+ul{
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    max-block-size: 136px;
+    align-items: center;
+    font-family: "Faculty Glyphic", serif;
+    color:rgb(95, 2, 95);
+}
+
+ul li a {
+    text-decoration: none;
+    color:rgb(95, 2, 95);
+}
+ul li a:hover{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+figcaption {
+    font-family: "DynaPuff", serif;
+    font-size: x-small;
+    color:rgb(80, 2, 80);
+}
+
+.HeadingSection figure img{
+    border-color: white;
+    border-style:double;
+    width: 400px;
+    height: auto;
+}
+
+footer{
+    max-width: 80%;
+    font-size: 10px;
+    text-align: center;
+    color:rgb(9, 3, 82);
+    align-self: flex-start;
+    background-color: rgb(151, 182, 254);
+    border-style: solid;
+    border-width: 1px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+details{   
+    max-width: 80%;
+    display: flex;
+    font-family:"Faculty Glyphic", serif;
+    color:rgb(9, 3, 82);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    [open]{
+        background-color: rgb(207, 249, 255);
+        border-radius: 10px;
+    }
+    summary {
+        padding: 10 10;
+        text-align: center;
+    }
+}
+
+    table{
+        font-family:"Faculty Glyphic",serif;
+        color:rgb(9, 3, 82);
+        border-width:1px;
+        border-style: solid;
+        border-color:rgb(9, 3, 82);
+        background-color: rgb(207, 249, 255);
+    }
+    table td{
+        padding-right: 16px;
+        align-content: center;
+        border-width:1px;
+        border-style: solid;
+        border-color:rgb(9, 3, 82);
+    }
+
+/*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
+
+/*------------------------------------------------------MENU BAR START-----------------------------------------*/
+.menu-background{ /*BLUE MENU BAR*/
     width: 100%;
     background-color: rgb(124, 195, 249);
     border-style: solid;
@@ -193,16 +323,323 @@
     body{
         background-color: darkblue;
     }
+    .NAVIGATIONMENU li{
+        gap:auto;
+
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .NAVIGATIONMENU li a{
+        gap:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    #Biography{
+        font-size: medium;
+        height: auto;
+        margin-right:11px;
+    }
+    #SADT{
+        font-size: medium;
+    }
+    .MainContent p{
+        font-size: 16px;
+    }
+    .MainContent h3{
+        margin-bottom:0px;
+    }
+    .MainContent ol{
+        font-size: medium;
+    }
+    .MainContent ul{
+        font-size: medium;
+    }
+    details{
+        font-size: medium;
+    }
+    .HeadingSection figure img{
+        width: 300px;
+    }
+    figcaption{
+        font-size: small;
+    }
+    footer{
+        font-size: larger;
+    }
+    footer#MainFooter{
+        font-size: larger;
+    }
+    .MainContent h3{
+        font-size: 24px;
+    }
+    .HeadingSection figcaption{
+        font-size: 15px;
+        margin:0px 0px;
+    }
+    
 }
 
-@media(min-width:601px) and (max-width:1200px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:601px) and (max-width:1600px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
     }
+    .MainContent{
+        max-width: 100%;
+        margin: 0px 0px;
+    }
+    .HeadingSection h1{
+        font-size: 55px;
+    }
+    .HeadingSection h2{
+        font-size: 40px;
+    }
+    .HeadingSection #SADT {
+        font-size: 30px;
+        margin-top: 0px;
+        padding-top: 0px;
+    } 
+    .HeadingSection figcaption{
+        font-size: 25px;
+    }
+    .MainContent #Biography{
+        font-size: 30px;
+    }
+    .NAVIGATIONMENU{
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin:0 0;
+        max-width: 100%;
+        min-width: 20px;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+    .NAVIGATIONMENU li{
+        flex:1;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin-left:0;
+        font-size: 25px;
+        max-width: 20%;
+    }
+    .NAVIGATIONMENU li a{
+        display:flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size:2.3vw;
+    }
+
+    .NAVIGATIONMENU li a:hover{
+        border-style: solid;
+        border-color: pink;
+    }
+    .menu-background{
+        height: 10%;
+    }
+
+    .MainContent h3{
+        font-size: 40px;
+        margin-bottom: 0px;
+        padding-top:40px;
+    }
+    .MainContent h3 u{
+        margin-bottom: 0px;
+        padding-bottom:0px;
+        text-size-adjust: 20px;
+    }
+    .MainContent p{
+        font-size: 30px;
+    }
+    .MainContent ul{
+        font-size: 35px;
+        padding-bottom:30px;
+        padding-top:40px;
+    }
+    .MainContent ol{
+
+        font-size: 30px;
+        padding-bottom:30px;
+        padding-top:40px;
+    }
+
+    .MainContent details{
+        font-size: 30px;
+    }
+    footer{
+        font-size: 30px;
+    }
+    footer#MainFooter{
+        font-size: 30px;
+    }
+    .MainContent table{
+        font-size: 30px;
+    }
+
 }
 
-@media(min-width:1201px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------DESKTOP+-----------------------------------------------------------*/
+
+
+
+
+
+
+
+@media(min-width:1600px){   
     body{
         background-color: green;
     }
+    .NAVIGATIONMENU {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .NAVIGATIONMENU li {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25%;
+        margin-left: 22%;
+        margin-bottom: 25%;
+        padding: 0px 0px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        }
+
+    .NAVIGATIONMENU li a {
+        display: flex;
+        color: rgb(12, 12, 228);
+        font-size: 35px;
+        text-decoration: none;
+        
+    }
+
+    .NAVIGATIONMENU li a:hover {
+        color: white;
+        background-color: pink;
+    }
+/*MENU BAR END */
+
+
+/*------------------HEADING SECTION START ---------------------*/
+
+    .HeadingSection {
+        display: inline-block;
+        grid-column: auto;
+        align-items: center;
+
+    }
+    .HeadingSection h1{
+        font-size: 60px;
+        float: left;
+        margin-left:200px;
+    }
+
+    .HeadingSection h2{
+        font-size: 50px;
+        margin-left:200px;
+        padding-top:20px;
+        float:left;
+        clear:left;
+    }
+    .HeadingSection #SADT{
+        font-size: 40px;
+        margin-left:200px;
+        margin-top: 0px;
+        float:left;
+        clear:left;
+    }
+
+    .HeadingSection figure{
+        flex-wrap: nowrap;
+        margin-right: 0;
+        padding: 0 0;
+    }
+
+
+
+    .HeadingSection figCaption{
+        font-size: 30px;
+        margin-top: 300px;
+    }
+    .MainContent{
+        margin-left: 100px;
+    }
+    .MainContent #Biography{
+        font-size: 35px;
+    }
+    .MainContent h3{
+        font-size: 45px;
+        margin-top: 3px;
+    }
+    .MainContent ol{
+        font-size: 35px;
+    }
+    .MainContent ul{
+        font-size: 35px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    .MainContent details{
+        font-size: 35px;
+    }
+    .MainContent p{
+        font-size: 35px;
+    }
+    .MainContent table{
+        font-size: 35px;
+    }
+    footer{
+        margin-left:50px;
+        font-size: 35px;
+    }
 }
+
+
+
+    
+
