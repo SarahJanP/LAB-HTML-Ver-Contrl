@@ -246,20 +246,20 @@ details{
     .even{color:rgb(140, 8, 127)}
 
     /*------------------CONTACT ME PAGE LINKS:------------------------- */
-    .ContactLinks{
+    .MainContent.ContactLinks{
         max-width: 80%;
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(95, 2, 95);
     }
 
-    .ContactLinks a{
+    .MainContent.ContactLinks a{
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(25, 6, 236);
     }
 
-    .ContactLinks a:hover{
+    .MainContent.ContactLinks a:hover{
         color:blueviolet;
         text-decoration: underline;
     }
