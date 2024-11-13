@@ -29,6 +29,7 @@ h3{
     text-align: center;
     Font-family:"DynaPuff", sans-serif;
     color:rgb(95, 2, 95);
+    margin-bottom:20px;
 }
 
 p{
@@ -100,7 +101,6 @@ details{
     max-width: 80%;
     display: flex;
     font-family:"Faculty Glyphic", serif;
-    font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
     color:rgb(9, 3, 82);
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -113,6 +113,22 @@ details{
         text-align: center;
     }
 }
+
+    table{
+        font-family:"Faculty Glyphic",serif;
+        color:rgb(9, 3, 82);
+        border-width:1px;
+        border-style: solid;
+        border-color:rgb(9, 3, 82);
+        background-color: rgb(207, 249, 255);
+    }
+    table td{
+        padding-right: 16px;
+        align-content: center;
+        border-width:1px;
+        border-style: solid;
+        border-color:rgb(9, 3, 82);
+    }
 
 /*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
 
@@ -266,11 +282,11 @@ details{
 
 @media(max-width:600px){  /*------------------------MOBILE-------------------*/
     body{
-        background-color: blue;
+        background-color:darkmagenta;
         width: 100%;
     }
     .menu-background{
-        max-width: 100%;
+        max-width: 355px;
         padding: 10px 10px;
 
     }
@@ -278,6 +294,7 @@ details{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
+        max-width: 375px;
     }
     .NAVIGATIONMENU li{
         gap:auto;
@@ -292,9 +309,10 @@ details{
         margin-bottom: 10px;
         padding-bottom: 10px;
         padding-top: 10px;
+        font-size: 15px;
     }
     #Biography{
-        font-size: larger;
+        font-size: medium;
         height: auto;
         margin-right:11px;
     }
@@ -308,13 +326,13 @@ details{
         margin-bottom:0px;
     }
     .MainContent ol{
-        font-size: larger;
+        font-size: medium;
     }
     .MainContent ul{
-        font-size: larger;
+        font-size: medium;
     }
     details{
-        font-size: larger;
+        font-size: medium;
     }
     figcaption{
         font-size: small;
@@ -330,29 +348,95 @@ details{
     }
     .HeadingSection figcaption{
         font-size: 15px;
+        margin:0px 0px;
     }
     
 }
 
-@media(min-width:601px) and (max-width:1200px){/*------------------------TABLET-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:601px) and (max-width:1880px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
     }
+    .MainContent{
+        max-width: 100%;
+        margin: 0px 0px;
+    }
+    .HeadingSection h1{
+        font-size: 55px;
+    }
+    .HeadingSection h2{
+        font-size: 40px;
+    }
     .HeadingSection #SADT {
+        font-size: 30px;
         margin-top: 0px;
         padding-top: 0px;
-    }
+    } 
     .HeadingSection figcaption{
-        font-size: 15px;
+        font-size: 25px;
+    }
+    .MainContent #Biography{
+        font-size: 30px;
+    }
+    .NAVIGATIONMENU{
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin:0 0;
+        max-width: 100%;
+        min-width: 20px;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
     }
     .NAVIGATIONMENU li{
+        flex:1;
         padding-top: 10px;
         padding-bottom: 11px;
         margin-left:0;
+        font-size: 25px;
+        max-width: 20%;
     }
+    .NAVIGATIONMENU li a{
+        display:flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size:2.3vw;
+    }
+
+    .NAVIGATIONMENU li a:hover{
+        border-style: solid;
+        border-color: pink;
+    }
+    .menu-background{
+        height: 10%;
+    }
+
     .MainContent h3{
+        font-size: 40px;
         margin-bottom: 0px;
-        padding-bottom:0px;
+        padding-top:40px;
     }
     .MainContent h3 u{
         margin-bottom: 0px;
@@ -360,25 +444,32 @@ details{
         text-size-adjust: 20px;
     }
     .MainContent p{
-        font-size: 17px;
+        font-size: 30px;
     }
     .MainContent ul{
-        font-size: 17px;
+        font-size: 35px;
+        padding-bottom:30px;
+        padding-top:40px;
     }
     .MainContent ol{
-        font-size: 17px;
+
+        font-size: 30px;
+        padding-bottom:30px;
+        padding-top:40px;
     }
 
     .MainContent details{
-        font-size: 17px;
+        font-size: 30px;
     }
     footer{
-        font-size: larger;
+        font-size: 30px;
     }
     footer#MainFooter{
-        font-size: larger;
+        font-size: 30px;
     }
-
+    .MainContent table{
+        font-size: 30px;
+    }
 
 }
 
@@ -396,6 +487,7 @@ details{
 
 
 
+/*----------------------------------------------------------------DESKTOP+-----------------------------------------------------------*/
 
 
 
@@ -403,16 +495,11 @@ details{
 
 
 
-
-@media(min-width:1201px){   /*------------------------DESKTOP+-------------------*/
+@media(min-width:1881px){   
     body{
         background-color: powderblue;
         margin-left: 15%;
         max-width: 85%;
-    }
-
-    p{
-        font-size: 25px;
     }
 
     /*-----------------MENU BAR start -----------*/
@@ -421,7 +508,7 @@ details{
         top: 0;
         left: 0;
         height: 100%;
-        width: 15%;
+        width: 400px;
         background-color: rgb(124, 195, 249);
         display: flex;
         flex-direction: column;
@@ -453,7 +540,7 @@ details{
     .NAVIGATIONMENU li a {
         display: flex;
         color: rgb(12, 12, 228);
-        font-size: 20px;
+        font-size: 35px;
         text-decoration: none;
         
     }
@@ -471,25 +558,25 @@ details{
         display: inline-block;
         grid-column: auto;
         align-items: center;
-        padding: 80px 20px;
+
     }
     .HeadingSection h1{
-        font-size: 50px;
+        font-size: 60px;
         float: left;
-        margin-left:120px;
+        margin-left:200px;
     }
 
     .HeadingSection h2{
-        font-size: 40px;
-        margin-left:120px;
+        font-size: 50px;
+        margin-left:200px;
         padding-top:20px;
         float:left;
         clear:left;
     }
     .HeadingSection #SADT{
-        font-size: 30px;
-        margin-left:120px;
-        margin-top: 0px;;
+        font-size: 40px;
+        margin-left:200px;
+        margin-top: 0px;
         float:left;
         clear:left;
     }
@@ -497,42 +584,55 @@ details{
     .HeadingSection figure {
         display:flex;
         align-items: center;
+        flex-wrap: nowrap;
         justify-content: flex-end;
-        max-width: 60%;
         height: auto;
-        margin-right:15%;
-        margin-bottom: 0px;
+        margin:0 0;
+        padding: 0 0;
     }
+
     .HeadingSection figure img{
         display:flex;
         justify-content: flex-end;
-        max-width: 40%;
+        width:300px;
         height: auto;
+        flex-wrap: wrap;
     }
 
     .HeadingSection figCaption{
         font-size: 30px;
         margin-top: 300px;
     }
-
-
+    .MainContent{
+        margin-left: 100px;
+    }
+    .MainContent #Biography{
+        font-size: 35px;
+    }
     .MainContent h3{
-        font-size: 40px;
+        font-size: 45px;
         margin-top: 3px;
     }
     .MainContent ol{
-        font-size: 30px;
+        font-size: 35px;
     }
     .MainContent ul{
-        font-size: 30px;
+        font-size: 35px;
         padding-bottom: 20px;
         margin-bottom: 80px;
     }
+    .MainContent details{
+        font-size: 35px;
+    }
     .MainContent p{
-        font-size: 30px;
+        font-size: 35px;
+    }
+    .MainContent table{
+        font-size: 35px;
     }
     footer{
-        font-size: 27px;
+        margin-left:50px;
+        font-size: 35px;
     }
 }
 
