@@ -246,20 +246,20 @@ details{
     .even{color:rgb(140, 8, 127)}
 
     /*------------------CONTACT ME PAGE LINKS:------------------------- */
-    .MainContent.ContactLinks{
+    p.ContactLinks a{
         max-width: 80%;
         font-family:"Faculty Glyphic", serif;
         text-decoration: none;
-        color:rgb(95, 2, 95);
+        color:rgb(174, 39, 174);
     }
 
-    .MainContent.ContactLinks a{
-        font-family:"Faculty Glyphic", serif;
+    p.ContactLinks {
+                font-family:"Faculty Glyphic", serif;
         text-decoration: none;
         color:rgb(25, 6, 236);
     }
 
-    .MainContent.ContactLinks a:hover{
+    p.ContactLinks a:hover{
         color:blueviolet;
         text-decoration: underline;
     }
@@ -272,8 +272,8 @@ details{
         font-family: "Faculty Glyphic", serif;
         font-size: x-small;
     }
-}
 
+}
 
 
 
@@ -282,7 +282,7 @@ details{
 
 /*-----------------------------------------MEDIA QUERIES----------------------------*/
 
-@media(max-width:600px){  /*------------------------MOBILE-------------------*/
+@media(max-width:780px){  /*------------------------MOBILE-------------------*/
     body{
         background-color:darkmagenta;
         width: 100%;
@@ -300,7 +300,6 @@ details{
     }
     .NAVIGATIONMENU li{
         gap:auto;
-
         padding-bottom: 10px;
         padding-top: 10px;
     }
@@ -311,7 +310,7 @@ details{
         margin-bottom: 10px;
         padding-bottom: 10px;
         padding-top: 10px;
-        font-size: 15px;
+        font-size: 20px;
     }
     #Biography{
         font-size: medium;
@@ -325,6 +324,7 @@ details{
         font-size: 16px;
     }
     .MainContent h3{
+        font-size: 30px;
         margin-bottom:0px;
     }
     .MainContent ol{
@@ -337,7 +337,7 @@ details{
         font-size: medium;
     }
     .HeadingSection figure img{
-        width: 300px;
+        max-width: 80%;
     }
     figcaption{
         font-size: small;
@@ -375,7 +375,7 @@ details{
 
 
 
-@media(min-width:601px) and (max-width:1900px){/*------------------------TABLET-------------------*/
+@media(min-width:781px) and (max-width:1900px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
     }
@@ -562,20 +562,21 @@ details{
 
     }
     .HeadingSection h1{
-        font-size: 60px;
+        font-size: 50px;
         float: left;
         margin-left:200px;
+        margin-top:60px;
     }
 
     .HeadingSection h2{
-        font-size: 50px;
+        font-size: 40px;
         margin-left:200px;
         padding-top:20px;
         float:left;
         clear:left;
     }
     .HeadingSection #SADT{
-        font-size: 40px;
+        font-size: 30px;
         margin-left:200px;
         margin-top: 0px;
         float:left;
@@ -608,32 +609,32 @@ details{
         margin-left: 100px;
     }
     .MainContent #Biography{
-        font-size: 35px;
+        font-size: 30px;
     }
     .MainContent h3{
-        font-size: 45px;
+        font-size: 35px;
         margin-top: 3px;
     }
     .MainContent ol{
-        font-size: 35px;
+        font-size: 30px;
     }
     .MainContent ul{
-        font-size: 35px;
+        font-size: 30px;
         padding-bottom: 20px;
         margin-bottom: 80px;
     }
     .MainContent details{
-        font-size: 35px;
+        font-size: 30px;
     }
     .MainContent p{
-        font-size: 35px;
+        font-size: 30px;
     }
     .MainContent table{
-        font-size: 35px;
+        font-size: 30px;
     }
     footer{
         margin-left:50px;
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
