@@ -138,190 +138,165 @@ details{
 .menu-background{ /*BLUE MENU BAR*/
     width: 100%;
     background-color: rgb(124, 195, 249);
-    border-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
     border-color: white;
 }
 
-.NAVIGATIONMENU { /*UL*/
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(0px,1vw,15px);  /*Spacing between each element*/
-    font-size: clamp(12px, 2vw, 25px);
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    max-width: 100%;
-    justify-content: center;
-}
-
-.NAVIGATIONMENU li{      
-    font-family:"Faculty Glyphic", sans-serif;
-    flex: 1 1 calc(25% -10px); /*Each item takes up 25% of the row*/
-    padding: clamp(5px,1vw,10px);  /*Padding change of each item.*/
+.NAVIGATIONMENU { /* The actual menu bar LIST */
+    display: grid;
+    margin: 0 auto;
+    padding: 0 0 0 0;
     text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
 }
 
-.NAVIGATIONMENU li a{     
-    font-family:"Faculty Glyphic", sans-serif;
-    font-weight:800;
+.NAVIGATIONMENU li { /* Menu Bar List ITEMS */
+    font-family: "Faculty Glyphic", serif;
+    flex-basis: auto; /* Let the items decide their size based on content */
+}
+
+.NAVIGATIONMENU li a { /* Menu Bar List LINKS */
+    text-align: center;
+    font-family: "Faculty Glyphic", serif;
+    font-weight: 800;
     text-decoration: none;
-    padding:10px;
-    overflow-wrap:break-word;
-    white-space: no-wrap;
-    color:rgb(12, 12, 228);
-
-
+    padding: 8px;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    color: rgb(12, 12, 228);
 }
-.NAVIGATIONMENU li a:hover{ /* ul li a:hover*/
-    box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* horizontal vertical blur radius colour */
+
+.NAVIGATIONMENU li a:hover { /* Menu Bar HOVER FUNCTION */
+    box-shadow: 0 6px 8px rgba(21, 70, 174, 0.5); /* Horizontal vertical blur radius color */
     color: white;
     border-radius: 8px;
     background-color: pink;
 }
-/*MENU BAR END*/
+
+/*------------------------------------------------------MENU BAR END---------------------------------------------*/
 
 
-/*PAGE HEADINGS !!*/
 
-        .HeadingSection{
-            display: flex;
-        
-            flex-flow:column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background-color: rgb(209, 126, 209);
 
-        h1{
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(13.8px, 4vw, 48px); /*Min, scale, Max*/
-            max-width: 80%;
-            color: rgb(54, 0, 54);
-            justify-content: center;
-            align-self:center;
-            margin-bottom: 0px;
-            padding-bottom: 0;
-        }
-        
-        #PortfolioLink a{ /*Link to main heading*/
-            color: rgb(54, 0, 54);
-            text-align: center;
-            text-decoration: none;
-            }
-            #PortfolioLink a:hover{
-                color:blueviolet;
-                text-decoration: underline;
 
-            }
-        
-        h2{ /*ID: UX & about me & contact me & projects & resume */
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(12px, 3vw, 25px); /*Min, scale, Max*/
-            align-self: center;
-            color:rgb(97, 17, 85);
-            margin-top:5px
-        }  
-        h3{ /*School for Advanced Digital Technology*/
-            font-family:"Faculty Glyphic", sans-serif;
-            font-size: clamp(9px, 2vw, 35px); /*Min, scale, Max*/
-            align-self: center;
-            color:rgb(95, 2, 95);
-            margin-bottom: 10px;
-            padding: 0 0;
-        }
-        img{
-            align-self: center;
-            max-width: 30%;
-            height: auto;
-            border-style:groove;
-            border-color: white;
-        }
+/*------------------------------------------------------HEADING SECTION START-------------------------------------*/
+.HeadingSection{ 
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(209, 126, 209);
+
+    #PORTFOLIOLINK{
+        max-width: 80%;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom:20px;
     }
-    .MainContent {
 
-/*REMAINDER OF PAGE -------------------------------*/
+    #PORTFOLIOLINK a{ /*Link to main heading - every page BUT MAIN*/
+        font-family: "DynaPuff", sans-serif;
+        color: rgb(54, 0, 54);
+        text-align: center;
+        text-decoration: none;
+        }
+    #PORTFOLIOLINK a:hover{ /*HOVER Function "Sarah Parker's Portfolio" every page BUT main*/
+        color:rgb(97, 17, 85);
+        text-decoration: underline;
+    }
 
+    #SADT{ /*Main Page - School for Advanced Digital Technology*/
+            max-width: 80%;
+        font-family:"Faculty Glyphic", serif;
+        align-self: center;
+        color:rgb(95, 2, 95);
+        margin-bottom: 10px;
+        padding: 0 0;
+    }
+
+
+}
+/*** -----------------------------------------------HEADING SECTION END--------------------------------***/
+
+
+
+/*--------------------------------------MAIN CONTENT BEGIN-----------------------------------*/
+.MainContent {
     display: flex;
     flex-flow:column;
     align-items: center;
     justify-content: center;
     background-color: powderblue;
 
-
-        #Biography{  /*PARAGRAPH ID BIOGRAPHY*/
-            font-family:"DynaPuff", serif;
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color: rgb(0, 0, 105);
-            max-width: 80%;
-            background-color:rgb(113, 212, 255);
-            align-self: center;
-            border-color: aliceblue;
-            border-style:double;
-            border-width: 10px;
-            padding: 10px 5px;
-        }
-
-        p{
-            justify-content: center;
-            font-family: "Faculty Glyphic";
-            color:rgb(0, 0, 105);
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-        }
-        ol{
-            font-family:"Faculty Glyphic";
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color:blueviolet;
-            align-self: center;
-            padding-bottom: 10px;
-        }
-        .odd{color:rgb(37, 13, 143)}
-        .even{color:rgb(140, 8, 127)}
-
-        .DETAILS{
-            max-width: 80%;
-            display: flex;
-            font-family:"Faculty Glyphic";
-            font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-            color:rgb(9, 3, 82);
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            [open]{
-                background-color: rgb(207, 249, 255);
-                border-radius: 10px;
-            }
-            summary {
-                padding: 10 10;
-                text-align: center;
-            }
-        }
+    p#Biography{  /*Main Page - PARAGRAPH ID BIOGRAPHY*/
+        font-family:"DynaPuff", sans-serif;
+        color: rgb(0, 0, 105);
+        max-width: 90%;
+        background-color:rgb(113, 212, 255);
+        align-self: center;
+        border-color: aliceblue;
+        border-style:double;
+        border-width: 10px;
+        padding: 10px 5px;
     }
+    .odd{color:rgb(37, 13, 143)}
+    .even{color:rgb(140, 8, 127)}
 
-
-    /*ABOUT ME PAGE:*/
-    #Artistic-History-Title{
+    /*------------------CONTACT ME PAGE LINKS:------------------------- */
+    .ContactLinks{
+        max-width: 80%;
         font-family:"Faculty Glyphic", serif;
-        font-size: clamp(18px, 2vw, 35px);
-        color:rgb(9, 3, 82);
-        margin-top:30px;
-        margin-bottom: 0px;
+        text-decoration: none;
+        color:rgb(95, 2, 95);
     }
-    #Artistic-History{
-    font-family:"DynaPuff", serif;
-    font-size: clamp(13px, 2vw, 35px); /*Min, scale, Max*/
-    color: rgb(0, 0, 105);
-    max-width: 90%;
 
-    align-self: center;
+    .ContactLinks a{
+        font-family:"Faculty Glyphic", serif;
+        text-decoration: none;
+        color:rgb(25, 6, 236);
+    }
 
+    .ContactLinks a:hover{
+        color:blueviolet;
+        text-decoration: underline;
+    }
 
-    border-width: 10px;
-    padding: 10px 5px;
+    /*----------------CONTACT ME LINKS END ------------------------*/
+
+    .MainContent #MainFooter{
+        max-width: 80%;
+        justify-content: center;
+        font-family: "Faculty Glyphic", serif;
+        font-size: x-small;
+    }
 }
 
 
-@media(max-width:600px){
+
+
+
+
+
+/*-----------------------------------------MEDIA QUERIES----------------------------*/
+
+@media(max-width:600px){  /*------------------------MOBILE-------------------*/
     body{
-        background-color: darkblue;
+        background-color:darkmagenta;
+        width: 100%;
+    }
+    .menu-background{
+        max-width: 355px;
+        padding: 10px 10px;
+
+    }
+    .NAVIGATIONMENU {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        max-width: 375px;
     }
     .NAVIGATIONMENU li{
         gap:auto;
@@ -400,6 +375,7 @@ details{
 
 
 
+@media(min-width:601px) and (max-width:1880px){/*------------------------TABLET-------------------*/
 @media(min-width:601px) and (max-width:1600px){/*------------------------TABLET-------------------*/
     body{
         background-color: purple;
@@ -525,10 +501,274 @@ details{
 
 
 
+@media(min-width:1881px){   
+    .MainContent{
+        max-width: 100%;
+        margin: 0px 0px;
+    }
+    .HeadingSection h1{
+        font-size: 55px;
+    }
+    .HeadingSection h2{
+        font-size: 40px;
+    }
+    .HeadingSection #SADT {
+        font-size: 30px;
+        margin-top: 0px;
+        padding-top: 0px;
+    } 
+    .HeadingSection figcaption{
+        font-size: 25px;
+    }
+    .MainContent #Biography{
+        font-size: 30px;
+    }
+    .NAVIGATIONMENU{
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin:0 0;
+        max-width: 100%;
+        min-width: 20px;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+    .NAVIGATIONMENU li{
+        flex:1;
+        padding-top: 10px;
+        padding-bottom: 11px;
+        margin-left:0;
+        font-size: 25px;
+        max-width: 20%;
+    }
+    .NAVIGATIONMENU li a{
+        display:flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right:10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size:2.3vw;
+    }
+
+    .NAVIGATIONMENU li a:hover{
+        border-style: solid;
+        border-color: pink;
+    }
+    .menu-background{
+        height: 10%;
+    }
+
+    .MainContent h3{
+        font-size: 40px;
+        margin-bottom: 0px;
+        padding-top:40px;
+    }
+    .MainContent h3 u{
+        margin-bottom: 0px;
+        padding-bottom:0px;
+        text-size-adjust: 20px;
+    }
+    .MainContent p{
+        font-size: 30px;
+    }
+    .MainContent ul{
+        font-size: 35px;
+        padding-bottom:30px;
+        padding-top:40px;
+    }
+    .MainContent ol{
+
+        font-size: 30px;
+        padding-bottom:30px;
+        padding-top:40px;
+    }
+
+    .MainContent details{
+        font-size: 30px;
+    }
+    footer{
+        font-size: 30px;
+    }
+    footer#MainFooter{
+        font-size: 30px;
+    }
+    .MainContent table{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------DESKTOP+-----------------------------------------------------------*/
+
+
+
+
+
+
+
 @media(min-width:1600px){   
     body{
-        background-color: green;
+        background-color: powderblue;
+        margin-left: 15%;
+        max-width: 85%;
     }
+
+    /*-----------------MENU BAR start -----------*/
+    .menu-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 400px;
+        background-color: rgb(124, 195, 249);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .NAVIGATIONMENU {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .NAVIGATIONMENU li {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 25%;
+        margin-left: 22%;
+        margin-bottom: 25%;
+        padding: 0px 0px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        }
+
+    .NAVIGATIONMENU li a {
+        display: flex;
+        color: rgb(12, 12, 228);
+        font-size: 35px;
+        text-decoration: none;
+        
+    }
+
+    .NAVIGATIONMENU li a:hover {
+        color: white;
+        background-color: pink;
+    }
+/*MENU BAR END */
+
+
+/*------------------HEADING SECTION START ---------------------*/
+
+    .HeadingSection {
+        display: inline-block;
+        grid-column: auto;
+        align-items: center;
+
+    }
+    .HeadingSection h1{
+        font-size: 60px;
+        float: left;
+        margin-left:200px;
+    }
+
+    .HeadingSection h2{
+        font-size: 50px;
+        margin-left:200px;
+        padding-top:20px;
+        float:left;
+        clear:left;
+    }
+    .HeadingSection #SADT{
+        font-size: 40px;
+        margin-left:200px;
+        margin-top: 0px;
+        float:left;
+        clear:left;
+    }
+
+    .HeadingSection figure {
+        display:flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        height: auto;
+        margin:0 0;
+        padding: 0 0;
+    }
+
+    .HeadingSection figure img{
+        display:flex;
+        justify-content: flex-end;
+        width:300px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .HeadingSection figCaption{
+        font-size: 30px;
+        margin-top: 300px;
+    }
+    .MainContent{
+        margin-left: 100px;
+    }
+    .MainContent #Biography{
+        font-size: 35px;
+    }
+    .MainContent h3{
+        font-size: 45px;
+        margin-top: 3px;
+    }
+    .MainContent ol{
+        font-size: 35px;
+    }
+    .MainContent ul{
+        font-size: 35px;
+        padding-bottom: 20px;
+        margin-bottom: 80px;
+    }
+    .MainContent details{
+        font-size: 35px;
+    }
+    .MainContent p{
+        font-size: 35px;
+    }
+    .MainContent table{
+        font-size: 35px;
+    }
+    footer{
+        margin-left:50px;
+        font-size: 35px;
+    }
+}
+
+
+
+    
+
+
     .NAVIGATIONMENU {
         display: flex;
         flex-direction: column;
