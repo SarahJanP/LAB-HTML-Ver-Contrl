@@ -2,45 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src=“LAB-HTML-VER-CONTRL/javascript.js”></script>
-    <title>Sarah's Portfolio!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
+
+<!-- SEPERATOR HEAD FROM FONTS-->
+  <link rel="stylesheet" href="indexstylesheet.css" > <!-- LINK TO STYLESHEET-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah's Portfolio!</title>
 </head>
 
 <body>
-    
-    <h1><u>Sarah Parker's Portfolio</u></h1>
-
+  <div class = "HeadingSection">
+    <h1>Sarah Parker's Portfolio!</h1>
     <h2> Interactive Design: User Experience </h2>
+    <h3 id = "SADT"> SAIT: School for Advanced Digital Technology</h3>
+    <figure>
+      <img height="170" src="images/sarah.jpg" title="Sarah" alt="It's Sarah (me)! She has her hair in two buns, beautiful eyeliner, and even little heart decals next to her eyes, she's wearing a black shirt and has a 'Sarah' Necklace, wow. Stunning."> 
+      <figcaption>Sarah Parker</figcaption>
+    </figure>
 
-    <h3> SAIT: School for Advanced Digital Technology</h3>
+  </div>
+    
+    <!------------------------MENU BAR-------------------------->
+  <div class ="menu-background">
+    <ul class = "NAVIGATIONMENU">
+        <li><a href="about.html"> More About Me</a> </li> 
+        <li><a href="contact.html">  Contact Me</a></li>
+        <li> <a href="projects.html"> Projects</a></li> 
+        <li><a href="resumecover.html"> Resume/Cover Letter</a></li>
+    </ul>
+  </div>  
+      <!------------------------MENU BAR END-------------------------->
 
-    <img height="170" src="images/sarah.jpg" title="Sarah" alt="It's Sarah (me)! She has her hair in two buns, beautiful eyeliner, and even little heart decals next to her eyes, she's wearing a black shirt and has a 'Sarah' Necklace, wow. Stunning."> 
-      <!--Navigation Panel, Click each section to jump to that page.-->
-      
-        
-      <table style="border-style:double;">       
-        <tr> <!--Headings!-->
-          <!--Add  target= "_blank" after href to make each clicked page open in a new tab.-->
-          <th><a href="about.html"> More About Me</a> </th> <!----> <th><a href="contact.html">  Contact Me</a></th><!----> <th> <a href="projects.html"> Projects</a></th> <th><a href="resumecover.html"> Resume/Cover Letter</a></th>
-        </tr>
-      </table>
-
-
-    <p>
+    <div class = "MainContent">
+    <p id="Biography">
       Hello, welcome to my portfolio website! I'm Sarah, and I am a first year Interactive Design: User Experience 
       Major at SAIT and I am learning so many interesting things! I can't wait to continue to grow as a designer.
     </p>
 
 
-    <p> The <i>5 Goals</i> that I want to keep in mind while attending SAIT are:</p>
+    <h3>My Academic Year Goals:</h3>
       <ol> 
-        <li> Maintain good sleep habits </li>
-        <li> Be excited to learn new things, and try not to get discouraged when challenged.</li>
-        <li> Do my best every day, whatever that looks like.</li>
-        <li> Make time for myself and my hobbies.</li>
-        <li> Try to make new connections wherever possible.</li>
+        <li class="odd"> Maintain good sleep habits </li>
+        <li class="even"> Be excited to learn new things, and try not to get discouraged when challenged.</li>
+        <li class="odd"> Do my best every day, whatever that looks like.</li>
+        <li class="even"> Make time for myself and my hobbies.</li>
+        <li class="odd"> Try to make new connections wherever possible.</li>
       </ol>
 
     <!-- Clickable that expands to reveal more information.-->
@@ -53,6 +63,8 @@
           I studied Chemistry for a year at Mount Royal University, Computer Science for a year at the University of Calgary, and now Interactive Design at SAIT.
           And it finally feels like I have found the program that I'm actually excited about.
       </details>
-    
+
+    <footer id ="MainFooter">Sarah Parker 2024 </footer>
+    </div>
 </body>
 </html>
