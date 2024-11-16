@@ -1,55 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
-  <script defer src="./javascript.js"></script>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <script defer src="./javascript.js"></script>
 
+    <link rel="stylesheet" href="indexstylesheet.css">       <!-- LINK TO STYLESHEET-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah's Portfolio!</title>
+  </head>
 
-
-  <link rel="stylesheet" href="indexstylesheet.css">       <!-- LINK TO STYLESHEET-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarah's Portfolio!</title>
-</head>
-
-<body>
-  <div class = "HeadingSection">
-    <h1>Sarah Parker's Portfolio!</h1>
-    <h2> Interactive Design: User Experience </h2>
-    <h3 id = "SADT"> SAIT: School for Advanced Digital Technology</h3>
-    <figure>
-      <img height="170" src="images/sarah.jpg" title="Sarah" alt="It's Sarah (me)! She has her hair in two buns, beautiful eyeliner, and even little heart decals next to her eyes, she's wearing a black shirt and has a 'Sarah' Necklace, wow. Stunning."> 
-      <figcaption>Sarah Parker</figcaption>
-    </figure>
-
-  </div>
-    
-    <!------------------------MENU BAR-------------------------->
-  <div class ="menu-background">
-    <ul class = "NAVIGATIONMENU">
-        <li><a href="about.html"> More About Me</a> </li> 
-        <li><a href="contact.html">  Contact Me</a></li>
-        <li> <a href="projects.html"> Projects</a></li> 
-        <li><a href="resumecover.html"> Resume/Cover Letter</a></li>
-    </ul>
-  </div>  
-      <!------------------------MENU BAR END-------------------------->
-
+  <body>
+    <div class = "HeadingSection">
+      <h1>Sarah Parker's Portfolio!</h1>
+      <h2> Interactive Design: User Experience </h2>
+      <h3 id = "SADT"> SAIT: School for Advanced Digital Technology</h3>
+      <figure>
+        <img height="170" src="images/sarah.jpg" title="Sarah" alt="It's Sarah (me)! She has her hair in two buns, beautiful eyeliner, and even little heart decals next to her eyes, she's wearing a black shirt and has a 'Sarah' Necklace, wow. Stunning."> 
+        <figcaption>Sarah Parker</figcaption>
+      </figure>
+    </div>
+      
+      <!------------------------MENU BAR-------------------------->
+    <div class ="menu-background">
+      <ul class = "NAVIGATIONMENU">
+          <li><a href="about.html"> More About Me</a> </li> 
+          <li><a href="contact.html">  Contact Me</a></li>
+          <li> <a href="projects.html"> Projects</a></li> 
+          <li><a href="resumecover.html"> Resume/Cover Letter</a></li>
+      </ul>
+    </div>  
+        <!------------------------MENU BAR END-------------------------->
     <div class = "MainContent">
 
-      <p id="Greetings"></p>
+      <p id="Greetings"></p> <!-- GOOD MORNING | GOOD AFTERNOON | GOOD EVENING -->
 
+      <p id="Biography">
+        Hello, welcome to my portfolio website! I'm Sarah, and I am a first year Interactive Design: User Experience 
+        Major at SAIT and I am learning so many interesting things! I can't wait to continue to grow as a designer.
+      </p>
 
+      <h3>My Academic Year Goals:</h3>
 
-    <p id="Biography">
-      Hello, welcome to my portfolio website! I'm Sarah, and I am a first year Interactive Design: User Experience 
-      Major at SAIT and I am learning so many interesting things! I can't wait to continue to grow as a designer.
-    </p>
-
-
-    <h3>My Academic Year Goals:</h3>
       <ol> 
         <li class="odd"> Maintain good sleep habits </li>
         <li class="even"> Be excited to learn new things, and try not to get discouraged when challenged.</li>
@@ -60,16 +54,19 @@
 
     <!-- Clickable that expands to reveal more information.-->
       <details>
-        <summary > 
-          <strong>Click</strong> to learn more about my Educational Background. 
-        </summary>
+        <summary ><strong>Click</strong> to learn more about my Educational Background. </summary>
           I have struggled for a long time in figuring out what it is that I really want to do in life, 
           and since graduating in 2020 I have tried a number of different programs at different post secondary schools.  
           I studied Chemistry for a year at Mount Royal University, Computer Science for a year at the University of Calgary, and now Interactive Design at SAIT.
           And it finally feels like I have found the program that I'm actually excited about.
       </details>
 
+      <button type = "button" id="btnalert"> </button>
+
+      <ol id="numbers"></ol>
+
+
       <footer id = "MainFooter"></footer>
     </div>
-</body>
+  </body>
 </html>

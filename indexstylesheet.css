@@ -131,6 +131,10 @@ details{
         border-style: solid;
         border-color:rgb(9, 3, 82);
     }
+    button{
+        width: 100px;
+        height: 40px;
+}
 
 /*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
 
@@ -269,7 +273,17 @@ details{
         border: 2px solid whitesmoke;
         padding: 10px 20px;
     }
+/* IDK IF WE CAN DO THIS BUTTTTT JUST PUTTING IT HERE UNTIL I KNOW FOR SURE. */
+    #btnalert:hover::before{
+        content: "HI";
+        background-color: ghostwhite;
+    }
+    #btnalert:hover{
+        background-color: green;
+    }
     /*JAVASCRIPT CLASSES END */
+
+
 
     /*------------------CONTACT ME PAGE LINKS:------------------------- */
     p.ContactLinks a{

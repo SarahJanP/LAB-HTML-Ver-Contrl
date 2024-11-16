@@ -1,13 +1,19 @@
-
+document.addEventListener("DOMContentLoaded", () => {
 /*CONSTANTS*/
 
 const today = new Date();
 const currentYear = today.getFullYear();
 const currentHours = today.getHours();
+const button = document.getElementById("btnalert");
+const initialValue = 1;
+const stopValue = 12;
+const orderedList = document.getElementById("numbers");
 
 
-/* Footer and Copyright */
-document.getElementById("MainFooter").innerHTML = "(c) Sarah Parker " + currentYear;
+if (button.onmouseover == true){
+    button.innerText = "Hovering!";     /* ?? I DONT UNDERSTAND BUTTONS.... */
+}
+
 
 
 /* Portfolio Greeting */
@@ -26,15 +32,39 @@ if (currentHours >= 17) {
 }
 /* -------------------- */
 
+/* ORDERED LIST FOR LOOP: */
+
+for (let i = initialValue; i <= stopValue; i++) {
+    // create a new <li> element with the createElement() document method:
+    let li = document.createElement("li")
+    // set the text content of the new <li> element:
+    if (i % 2 === 0) {
+    li.textContent = "Even";
+    } else {
+    li.textContent = "Odd";
+    }
+    // append the <li> element to your ordered list:
+    orderedList.appendChild(li);
+}
+
+
+/* Footer and Copyright */
+document.getElementById("MainFooter").innerHTML = "(c) Sarah Parker " + currentYear;
+
+
+
+
+/*-----------------CONSOLE FUNCTIONS-------------------- */
+
 console.log(today.toDateString());
 console.log("Javascript File Loaded");         
 
 /* TODO:
 ALERT BUTTON: create button with the ID: "btn-alert"
--> When button is cllicked use the alert() function to display a message
+-> When button is clicked use the alert() function to display a message
 
-Hover Button: Use Javaascrtipt to change the appeaaranace of thhe alert button so the text of the button c hanges  when
-the mouse hovers over it, anad then reverts when it leaves. May use DOM APII method:
+Hover Button: Use Javascrtipt to change the appearance of thhe alert button so the text of the button c hanges  when
+the mouse hovers over it, anad then reverts when it leaves. May use DOM API method:
 - getElementByID()
 - onmouseover
 - innerHTMLL or innerText
@@ -49,3 +79,4 @@ For loops
 
 
 */
+});
