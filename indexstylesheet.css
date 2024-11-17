@@ -138,6 +138,9 @@ details{
         width: 100px;
         height: 40px;
         background-color: white;
+        border-radius:50px;
+        font-family: "Dynapuff", serif;
+        text-decoration: none;
     }
 
 /*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
@@ -388,6 +391,14 @@ details{
         font-size: 15px;
         margin:0px 0px;
     }
+    #btn-alert{
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        border-radius:50px;
+    }
+
+
     
 }
 
@@ -507,6 +518,14 @@ details{
     }
     .MainContent table{
         font-size: 30px;
+    }
+    #btn-alert{
+        width: 300px;
+        height: 40px;
+        background-color: white;
+        border-radius:50px;
+        font-size: 30px;
+
     }
 
 }
@@ -668,6 +687,14 @@ details{
     footer{
         margin-left:50px;
         font-size: 30px;
+    }
+    #btn-alert{
+        width: 300px;
+        height: 60px;
+        background-color: white;
+        border-radius:50px;
+        font-size: 30px;
+
     }
 }
 

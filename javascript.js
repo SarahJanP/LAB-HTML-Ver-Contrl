@@ -13,20 +13,23 @@ const orderedList = document.getElementById("numbers");
 
 
 /*------------ Self-made Functions------------- */
+
 /*--------------------------------------------- */
 
 
 
 /**-----BUTTON ALERT and MOUSE HOVER CHANGES :-----*/
-button.addEventListener("click", function(){alert("Hello World!"); console.log("btn-alert functional");});/* When button is clicked, it runs the funcitons alert and console.log. */
+button.addEventListener("click", function(){alert("Did I scare ya?"); console.log("btn-alert functional");});/* When button is clicked, it runs the funcitons alert and console.log. */
 button.addEventListener("mouseover", event => {                                                           /* When mouse hovers over the button it changes color + text.*/ 
     event.target.style.backgroundColor="pink";
     event.target.textContent = "IM WARNING YOU";
+    button.style.textDecoration = "underline";
 });
 
 button.addEventListener("mouseout", event=>{                                                              /* When mouse hover LEAVES the button it reverts back to normal. */
     event.target.style.backgroundColor="white";
     event.target.textContent = "Don't Touch!";
+    button.style.textDecoration = "none";
 });/*------------------------------------------------------ */
 
 
