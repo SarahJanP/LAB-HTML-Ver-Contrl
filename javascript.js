@@ -35,39 +35,40 @@ button.addEventListener("mouseout", event=>{                                    
 if (currentHours < 12) {                                                                                  /*if before noon good morning*/
     document.getElementById("Greetings").innerHTML = "Good Morning!";
     document.getElementById("Greetings").classList.add("morning");
+    console.log("current time " + currentHours +":00");
 }
 
 if (12 <= currentHours && currentHours < 17){                                                             /*If before 5pm good afternoon*/
     document.getElementById("Greetings").innerHTML = "Good Afternoon!";
     document.getElementById("Greetings").classList.add("afternoon");
+    console.log("current time " + currentHours +":00");
 }
 if (currentHours >= 17) {                                                                                 /* If after 5pm good evening :> */
     document.getElementById("Greetings").innerHTML = "Good Evening!";
     document.getElementById("Greetings").classList.add("evening");
+    console.log("current hours: " + currentHours +":00h");
 }/*------------------------------------------------------ */
 
 
 
 /* --------------ORDERED LIST FOR LOOP:---------------- */
 for (let i = initialValue; i <= stopValue; i++) {                                                         /* guessing i++ the more efficient method? Thats how I did it with python / java */
-
-    let li = document.createElement("li")
+    let li = document.createElement("li") /* Temporary element */
     
     if (i % 2 === 0) {                                                                                    /* If there is no remainder after dividing by 2 then the number must be even. */
     li.textContent = "Even";
     } else {
     li.textContent = "Odd";                                                                               /* If there is any remainder after dividing by 2 then must be odd.*/
     }
-    
     orderedList.appendChild(li);                                                                          /* At the end of every iteration append the element.*/
 }/*------------------------------------------------------ */
-
+console.log("'numbers' ordered list created");
 
 
 /* ----------------FOOTER AND COPYRIGHT------------------*/
 document.getElementById("MainFooter").innerHTML = "(c) Sarah Parker " + currentYear;
 /*------------------------------------------------------ */
-
+console.log("MainFooter creation successful");
 
 
 /*-----------------CONSOLE FUNCTIONS-------------------- */
