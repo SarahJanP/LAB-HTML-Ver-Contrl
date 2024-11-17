@@ -8,6 +8,7 @@ const button = document.getElementById("btn-alert");
 const initialValue = 1; /* Used in odd/even for loop */
 const stopValue = 12;   /* Used in odd/even for loop */
 const orderedList = document.getElementById("numbers");
+const greetings = document.getElementById("Greetings");
 footerElements = document.getElementById("MainFooter");
 /*------------------------------------------------------ */
 
@@ -37,19 +38,19 @@ button.addEventListener("mouseout", event=>{                                    
 
 /* ------------PORTFOLIO GREETING-------------- */
 if (currentHours < 12) {                                                                                  /*if before noon good morning*/
-    document.getElementById("Greetings").innerHTML = "Good Morning!";
-    document.getElementById("Greetings").classList.add("morning");
+    greetings.innerHTML = "Good morning!";
+    greetings.classList.add("morning");
     console.log("current time " + currentHours +":00");
 }
 
-if (12 <= currentHours && currentHours < 17){                                                             /*If before 5pm good afternoon*/
-    document.getElementById("Greetings").innerHTML = "Good Afternoon!";
-    document.getElementById("Greetings").classList.add("afternoon");
+else if (12 <= currentHours && currentHours < 17){                                                             /*If before 5pm good afternoon*/
+    greetings.innerHTML = "Good afternoon!";
+    greetings.classList.add("afternoon");
     console.log("current time " + currentHours +":00");
 }
-if (currentHours >= 17) {                                                                                 /* If after 5pm good evening :> */
-    document.getElementById("Greetings").innerHTML = "Good Evening!";
-    document.getElementById("Greetings").classList.add("evening");
+else{                                                                                 /* If after 5pm good evening :> */
+    greetings.innerHTML = "Good evening!";
+    greetings.classList.add("evening");
     console.log("current hours: " + currentHours +":00h");
 }/*------------------------------------------------------ */
 
@@ -70,14 +71,15 @@ console.log("'numbers' ordered list created");
 
 
 /* ----------------FOOTER AND COPYRIGHT------------------*/
-/*Need to iterate over ALL items with id MainFooter on each page */
 document.getElementById("MainFooter").innerHTML= "(c) Sarah Parker " + currentYear;
+/*Footer is currently only on the main page, I tried using the same element ID for
+each footer on every page but they were appearing blank and I couldn't figure out why, so the
+remainder of the pages still have the Return to Main footer. */
 /*------------------------------------------------------ */
 console.log("MainFooter creation successful");
 
 
 /*-----------------CONSOLE FUNCTIONS-------------------- */
-
 console.log(today.toDateString());
 console.log("Javascript File Loaded");
 /*------------------------------------------------------ */
