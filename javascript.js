@@ -8,6 +8,7 @@ const button = document.getElementById("btn-alert");
 const initialValue = 1; /* Used in odd/even for loop */
 const stopValue = 12;   /* Used in odd/even for loop */
 const orderedList = document.getElementById("numbers");
+footerElements = document.getElementById("MainFooter");
 /*------------------------------------------------------ */
 
 
@@ -69,7 +70,8 @@ console.log("'numbers' ordered list created");
 
 
 /* ----------------FOOTER AND COPYRIGHT------------------*/
-document.getElementById("MainFooter").innerHTML = "(c) Sarah Parker " + currentYear;
+/*Need to iterate over ALL items with id MainFooter on each page */
+document.getElementById("MainFooter").innerHTML= "(c) Sarah Parker " + currentYear;
 /*------------------------------------------------------ */
 console.log("MainFooter creation successful");
 

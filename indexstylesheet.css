@@ -1,9 +1,3 @@
-        /*  TODO: 
-        MAKE ALL LINKS HAVE VISUAL FEEDBACK WHEN HOVERING 
-        FIX COLOURS
-        ADD SPECIFIC SECTIONS TO EACH DOCUMENT AND NAME THEM
-        */
-
 /*--------------------------------------UNIVERSAL STYLING  -----  element selectors */
 
 h1{ 
@@ -74,31 +68,48 @@ figcaption {
     color:rgb(80, 2, 80);
 }
 
-.HeadingSection figure img{
-    border-color: white;
-    border-style:double;
-    width: 400px;
-    height: auto;
-}
 
-footer{
-    max-width: 80%;
-    font-size: 10px;
+
+#MainFooter{
+    display: flex;
+    width: 150px;
+    height:30px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color:rgb(9, 3, 82);
     background-color: rgb(151, 182, 254);
+    border-color:rgb(9, 3, 82);
     border-style: solid;
-    border-width: 1px;
+    margin: 10px 10px;
+    font-family: "Faculty Glyphic", serif;
 }
-footer a{
+
+#BackFooter{
+    width:100px;
+    height:30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151, 182, 254);
+    color:rgb(65, 1, 40);
+    border-color:rgb(9, 3, 82);
+    border-style: solid;
+    margin: 10px 10px;
+    font-family: "Faculty Glyphic", serif;
+    text-decoration: none;
+
+}
+#BackFooter a{
+    margin: 10px 10px;
+    font-family: "Faculty Glyphic", serif;
     text-decoration: none;
 }
 
-footer a:hover{
-    color:blueviolet;
+#BackFooter a:hover{
     text-decoration: underline;
+    color:rgb(255, 30, 109);
 }
-
 details{   
     max-width: 80%;
     display: flex;
@@ -123,6 +134,8 @@ details{
         border-style: solid;
         border-color:rgb(9, 3, 82);
         background-color: rgb(207, 249, 255);
+        margin: 30px 30px;
+        padding: 20px 20px;
     }
     table td{
         padding-right: 16px;
@@ -131,20 +144,15 @@ details{
         border-style: solid;
         border-color:rgb(9, 3, 82);
     }
-    #btn-alert{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 40px;
-        background-color: white;
-        border-radius:50px;
-        font-family: "Dynapuff", serif;
-        text-decoration: none;
-    }
+
 
 /*--------------------------------------------------UNIVERSAL STYLING END --------------------------------------*/
-
+.HeadingSection figure img{
+    border-color: white;
+    border-style:double;
+    width: 400px;
+    height: auto;
+}
 /*------------------------------------------------------MENU BAR START-----------------------------------------*/
 .menu-background{ /*BLUE MENU BAR*/
     width: 100%;
@@ -255,7 +263,18 @@ details{
     }
     .odd{color:rgb(37, 13, 143)}
     .even{color:rgb(140, 8, 127)}
-
+    
+    #btn-alert{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius:50px;
+        font-family: "Dynapuff", serif;
+        text-decoration: none;
+        padding: 10px px;
+        margin: 25px 25px;
+    }
 
     /*JAVASCRIPT CLASSES FOR CHANGING THE GREETING BACKGROUND COLOR!*/
     .morning{
@@ -282,7 +301,10 @@ details{
     }
 
 
-
+    #numbers{
+        padding-bottom: 16px; 
+        padding-top: 16px;
+    }
 
     /*------------------CONTACT ME PAGE LINKS:------------------------- */
     p.ContactLinks a{
@@ -305,9 +327,8 @@ details{
     #Greetings {
         margin: 0 0 0 0;
         margin-top: 30px;
-
-
     }
+
     /*----------------CONTACT ME LINKS END ------------------------*/
 }
 
@@ -378,12 +399,8 @@ details{
     figcaption{
         font-size: small;
     }
-    footer{
-        font-size: larger;
-    }
-    footer#MainFooter{
-        font-size: larger;
-    }
+
+
     .MainContent h3{
         font-size: 24px;
     }
@@ -396,10 +413,23 @@ details{
         height: 40px;
         background-color: white;
         border-radius:50px;
+        padding: 10px 10px;
+        margin: 25px 25px;
     }
-
-
-    
+    #MainFooter{
+        display: flex;
+        width: 200px;
+        height:30px;
+        font-size: 15px;
+        margin: 10px 10px;
+    }
+    #BackFooter{
+        display: flex;
+        width: 200px;
+        height:30px;
+        font-size: 15px;
+        margin: 10px 10px;
+    }
 }
 
 
@@ -510,43 +540,38 @@ details{
     .MainContent details{
         font-size: 30px;
     }
-    footer{
-        font-size: 30px;
-    }
-    footer#MainFooter{
-        font-size: 30px;
-    }
+
     .MainContent table{
         font-size: 30px;
     }
     #btn-alert{
-        width: 300px;
-        height: 40px;
+    width: 250px;
+    height: 100px;
         background-color: white;
         border-radius:50px;
         font-size: 30px;
-
     }
-
+    
+    #MainFooter{
+        display: flex;
+        width: 300px;
+        height:40px;
+        font-size: 25px;
+        margin: 10px 10px;
+    }
+    #BackFooter{
+        display: flex;
+        width: 300px;
+        height:40px;
+        font-size: 25px;
+        margin: 10px 10px;
+    }
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------------------DESKTOP+-----------------------------------------------------------*/
-
-
 
 @media(min-width:1901px){   
     body{
@@ -684,17 +709,28 @@ details{
     .MainContent table{
         font-size: 30px;
     }
-    footer{
-        margin-left:50px;
-        font-size: 30px;
-    }
+
     #btn-alert{
         width: 300px;
         height: 60px;
         background-color: white;
         border-radius:50px;
         font-size: 30px;
+    }
 
+    #MainFooter{
+        display: flex;
+        width: 400px;
+        height:45px;
+        font-size: 30px;
+        margin: 10px 10px;
+    }
+    #BackFooter{
+        display: flex;
+        width: 300px;
+        height:45px;
+        font-size: 30px;
+        margin: 10px 10px;
     }
 }
 
